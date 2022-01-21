@@ -1,0 +1,47 @@
+*{
+  font-family: 'Calibri', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+.browniepic{
+  max-width: 250px;
+}
+p{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+aside{
+  float:right;
+  border: 1px solid #111111;
+  border-radius: 3px;
+}
+h1{
+  padding: 10px 20px;
+  background: brown;
+  border-radius: 5px;
+  border: 1px solid brown;
+  font-size: 3rem;
+  color: white;
+}
+h2{
+  padding: 10px 10px 5px 10px;
+}
+h3{
+  padding-left: 10px;
+}
+h4{
+  padding: 20px 10px 10px 10px;
+  color: #111111;
+}
+.tip{
+  font-style: italic;
+}
+.related{
+  padding-right: 20px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+a{
+  color: brown;
+  text-decoration: none;
+}

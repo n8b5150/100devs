@@ -1,0 +1,184 @@
+/* Default Styles and values*/
+*{
+  font-family: 'Calibri', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clear{
+  clear: both;
+}
+
+
+/* Styles */
+a{
+  color: black;
+  text-decoration: none;
+}
+header{
+  background: black;
+}
+header *{
+  color: white;
+  background: black;
+}
+.logo{
+  background: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: .6rem;
+}
+ul{
+  list-style: none;
+}
+main a{
+  color: white;
+}
+input{
+  background: white;
+  color: black;
+}
+.invert{
+  color: white;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+h2{
+  font-size: 1.25rem;
+}
+.headlinenormal{
+  font-weight: normal;
+}
+.caps{
+  text-transform: uppercase;
+}
+
+/* background images */
+.mainheadline{
+  background-image: url("../assets/israel.jpg");
+}
+.q1{
+  background-image: url("../assets/gohome.jpg");
+}
+.q2{
+  background-image: url("../assets/vaccine.jpg");
+}
+.q3{
+  background-image: url("../assets/workgyms.webp");
+}
+.q4{
+  background-image: url("../assets/folksinger.webp");
+}
+
+/* Layout */
+.container1{
+  background: black;
+  margin: 0 auto;
+}
+header{
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+header *{
+  display: inline;
+  margin: 0;
+}
+header > section{
+  padding-top: 15px;
+}
+.container2{
+  max-width: 1200px;
+  margin: auto;
+}
+.logo{
+  border: 1px solid black;
+  padding: 0 3px;
+  line-height: .8rem;
+}
+li{
+  padding: 10px 15px;
+  margin: 0 -2px;
+  border: 1px solid white;
+  /* border-right: 0;
+  border-top: 0;
+  border-bottom: 0; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-block;
+}
+.title{
+  text-align: left;
+}
+.date{
+  text-align: right;
+}
+h1,h2,p{
+  padding-bottom: 7px;
+}
+.leftborder{
+  border: 2px solid red;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  padding-left: 5px;
+}
+.borderblue{
+  border-color: blue;
+}
+.bordergray{
+  border-color: gray;
+}
+.mainheadline{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height:400px;
+  border:5px solid white;
+}
+.quarters{
+  width:50%;
+  height:400px;
+}
+.q1,.q2,.q3,.q4{
+  width: 50%;
+  height: 190px;
+  padding: 10px;
+  border:5px solid white;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.thirds{
+  width: 33%;
+}
+.thirds img{
+  display: block;
+  max-width: 425px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.welcomebar h2{
+  display: inline;
+}
+.date{
+  text-align: right;
+}
+.welcomebar,main{
+  width: 100%;
+  float: left;
+}
+.welcome,.mainheadline,.quarters,.q1,.q2,.q3,.q4,.thirds{
+  float: left;
+}
+
+/* responsive design */
