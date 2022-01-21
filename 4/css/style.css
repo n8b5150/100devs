@@ -1,18 +1,18 @@
 *{
   font-family: 'Helvetica', 'Arial', 'Calibri', sans-serif;
-  color: white;
+  color: rgb(238, 238, 238);
   background: #87ceeb;
 }
 
 section{
   margin: auto;
   margin-top: 30px;
-  border: 3px solid #48cd31;
+  border: 3px solid #42af2e;
   padding: 20px;
-  max-width: 800px;
+  max-width: 700px;
 }
 a{
-  color: #48cd31;
+  color: #42af2e;
 }
 p,h1{
   font-family: 'Times', 'Times New Roman', serif;
@@ -43,7 +43,6 @@ li{
   padding: 0 5px;
 }
 li + li{
-  border-color: purple;
   border: 2px solid #808080;
   border-top: 0;
   border-right: 0;
