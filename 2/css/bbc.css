@@ -64,19 +64,19 @@ h2{
 
 /* background images */
 .mainheadline{
-  background-image: url("../assets/israel.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/israel.jpg");
 }
 .q1{
-  background-image: url("../assets/gohome.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/gohome.jpg");
 }
 .q2{
-  background-image: url("../assets/vaccine.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/vaccine.jpg");
 }
 .q3{
-  background-image: url("../assets/workgyms.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/workgyms.webp");
 }
 .q4{
-  background-image: url("../assets/folksinger.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/folksinger.webp");
 }
 
 /* Layout */
@@ -103,7 +103,7 @@ header > section{
 .logo{
   border: 1px solid black;
   padding: 0 3px;
-  line-height: .8rem;
+  line-height: .6rem;
 }
 li{
   padding: 10px 15px;
@@ -139,11 +139,15 @@ h1,h2,p{
   border-color: gray;
 }
 .mainheadline{
-  background-size: contain;
+  background-color: ;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
   height:400px;
-  border:5px solid white;
+  display: flex;
+  align-content: flex-end;
+  border: 5px solid white;
+  padding: 10px;
 }
 .quarters{
   width:50%;
@@ -151,27 +155,28 @@ h1,h2,p{
 }
 .q1,.q2,.q3,.q4{
   width: 50%;
-  height: 190px;
+  height: 200px;
   padding: 10px;
-  border:5px solid white;
-  background-size:contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  border: 5px solid white;
+  display: flex;
+  align-content: flex-end;
 }
 .thirds{
   width: 33%;
+  padding: 10px;
 }
 .thirds img{
   display: block;
-  max-width: 425px;
+  max-width: 325px;
   padding: 5px;
-  border-radius: 20px;
-  border: 2px solid white;
 }
 .welcomebar h2{
   display: inline;
 }
 .date{
-  text-align: right;
+  float: right;
 }
 .welcomebar,main{
   width: 100%;
@@ -180,5 +185,10 @@ h1,h2,p{
 .welcome,.mainheadline,.quarters,.q1,.q2,.q3,.q4,.thirds{
   float: left;
 }
+.qtext{
+  vertical-align: bottom;
+  margin-top: auto;
+}
+
 
 /* responsive design */
