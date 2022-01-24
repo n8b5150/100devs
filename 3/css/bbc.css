@@ -1,3 +1,4 @@
+/* Default Styles and values*/
 *{
   font-family: 'Calibri', 'Helvetica', 'Arial', sans-serif;
   margin: 0;
@@ -5,63 +6,47 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .clear{
   clear: both;
 }
 
+
+/* Styles */
+a{
+  color: black;
+  text-decoration: none;
+}
 header{
-  height: 60px;
   background: black;
-  padding: 0 25px;
-  margin: 0;
 }
 header *{
   color: white;
   background: black;
-  display: inline;
 }
-header > section{
-  padding-top: 15px;
-}
-
 .logo{
-  border: 1px solid black;
   background: white;
   color: black;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 0 3px;
+  line-height: .6rem;
 }
 ul{
   list-style: none;
 }
-li{
-  padding: 20px 10px;
-  margin: 0;
-  border: 1px solid white;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: 0;
-  display: inline-block;
-}
-a{
-  text-decoration: none;
+main a{
+  color: white;
 }
 input{
   background: white;
   color: black;
 }
-.title{
-  text-align: left;
-}
-.date{
-  text-align: right;
-}
 .invert{
   color: white;
-}
-h1,h2,p{
-  padding-bottom: 7px;
 }
 h1{
   font-size: 2.5rem;
@@ -72,6 +57,75 @@ h2{
 }
 .headlinenormal{
   font-weight: normal;
+}
+.caps{
+  text-transform: uppercase;
+}
+
+/* background images */
+.mainheadline{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/israel.jpg");
+}
+.q1{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/gohome.jpg");
+}
+.q2{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/vaccine.jpg");
+}
+.q3{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/workgyms.webp");
+}
+.q4{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/folksinger.webp");
+}
+
+/* Layout */
+.container1{
+  background: black;
+  margin: 0 auto;
+}
+header{
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+header *{
+  display: inline;
+  margin: 0;
+}
+header > section{
+  padding-top: 15px;
+}
+.container2{
+  max-width: 1200px;
+  margin: auto;
+}
+.logo{
+  border: 1px solid black;
+  padding: 0 3px;
+  line-height: .6rem;
+}
+li{
+  padding: 10px 15px;
+  margin: 0 -2px;
+  border: 1px solid white;
+  /* border-right: 0;
+  border-top: 0;
+  border-bottom: 0; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-block;
+}
+.title{
+  text-align: left;
+  padding-left: 10px;
+}
+.date{
+  text-align: right;
+  padding-right: 10px;
+}
+h1,h2,p{
+  padding-bottom: 7px;
 }
 .leftborder{
   border: 2px solid red;
@@ -86,55 +140,48 @@ h2{
 .bordergray{
   border-color: gray;
 }
-.caps{
-  text-transform: uppercase;
+.news{
+  margin-left: 10px;
 }
 .mainheadline{
-  background-image: url("../assets/israel.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
   height:400px;
-  border:5px solid white;
+  display: flex;
+  align-content: flex-end;
+  border: 5px solid white;
+  padding: 10px;
 }
-
-
 .quarters{
   width:50%;
   height:400px;
 }
 .q1,.q2,.q3,.q4{
   width: 50%;
-  height: 190px;
+  height: 200px;
   padding: 10px;
-  border:5px solid white;
-  background-size:contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  border: 5px solid white;
+  display: flex;
+  align-content: flex-end;
 }
-.q1{
-  background-image: url("../assets/gohome.jpg");
-}
-.q2{
-  background-image: url("../assets/vaccine.jpg");
-}
-.q3{
-  background-image: url("../assets/workgyms.webp");
-}
-.q4{
-  background-image: url("../assets/folksinger.webp");
-}
-
 .thirds{
   width: 33%;
+  padding: 10px;
 }
 .thirds img{
   display: block;
-  max-width: 425px;
+  max-width: 325px;
   padding: 5px;
-  border-radius: 20px;
-  border: 2px solid white;
 }
-
+.welcomebar h2{
+  display: inline;
+}
+.date{
+  float: right;
+}
 .welcomebar,main{
   width: 100%;
   float: left;
@@ -142,3 +189,10 @@ h2{
 .welcome,.mainheadline,.quarters,.q1,.q2,.q3,.q4,.thirds{
   float: left;
 }
+.qtext{
+  vertical-align: bottom;
+  margin-top: auto;
+}
+
+
+/* responsive design */
