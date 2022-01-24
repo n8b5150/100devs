@@ -5,7 +5,41 @@
   box-sizing: border-box;
 }
 
+
+/* Styles */
 a{
 text-decoration: none;
 color: black;
+}
+ul{
+  list-style: none;
+}
+
+
+/* Images */
+.headline img{
+  max-width: 500px;
+}
+
+/* Layout */
+header,.headline,.featured,.latest{
+  padding: 10px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  background: white;
+}
+.headline{
+  margin-left: 150px;
+  float: left;
+}
+.featured{
+}
+.latest{
+  clear: both;
+  margin-left: 150px;
 }
