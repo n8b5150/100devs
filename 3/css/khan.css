@@ -3,4 +3,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(10,42,102);
 }
+
+/* styles */
+/* blue rgb(24,101,242) */
+/* off-white rgb(247,245,244) */
+/* gray search background rgb(240,241,242)*/
+/* navy rgb(10,42,102)*/
+a{
+  text-decoration: none;
+  color: rgb(24,101,242);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+ul{
+  list-style: none;
+}
+.logo{
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(10,42,102);
+}
+.logo:hover{
+  color: rgb(24,101,242);
+}
+header{
+  color: rgb(24,101,242);
+}
+
+
+/* layout */
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  height: 100px;
+

@@ -6,49 +6,55 @@
     <title>Khan Exercise</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <nav>
+          <select name="courses" value="Courses">
+            <option value="Math">Math</option>
+            <option value="Computing">Computing</option>
+            <option value="Language">Language</option>
+            <option value="Science">Science</option>
+            <option value="Economics">Economics</option>
+          </select>
+          <form action="search.html" id="search">
+            <input type="text" placeholder="Search">
+          </form>
 
-    <header>
-      <select name="courses" value="Courses">
-        <option value="Math">Math</option>
-        <option value="Computing">Computing</option>
-        <option value="Language">Language</option>
-        <option value="Science">Science</option>
-        <option value="Economics">Economics</option>
-      </select>
-      <form action="search.html" id="search">
-        <input type="text" value="Search">
-      </form>
+          <section class="logo">
+            <a href="https://www.khanacademy.org/" class="logo">
+            <img src="./assets/khanlogo.png" alt="Khan Academy logo">
+            Khan Academy
+            </a>
+          </section>
+          <ul>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <img src="./assets/khanlogo.png" alt="Khan Academy logo">
-      <span>Khan Academy</span>
-      <ul>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign up</a></li>
-      </ul>
-    </header>
+      <main>
+        <section>
+          <img src="./assets/classroom.jpg" alt="Children learning online together" width=50%>
+        </section>
+        <section>
+          <h1>For every student, every classroom. Real results.</h1>
+          <img src="./assets/underline.png" alt="emphasis on real results">
+          <p>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
+          <ul>
+            <li><a href="#">Learners</a></li>
+            <li><a href="#">Teachers</a></li>
+            <li><a href="#">Districts</a></li>
+            <li><a href="#">Parents</a></li>
+          </ul>
+        </section>
+      </main>
 
-    <main>
-      <section>
-        <img src="./assets/classroom.jpg" alt="Children learning online together">
+      <section class="sectionTwo">
+        <h2>Why Khan Academy works</h2>
       </section>
-      <section>
-        <h1>For every student, every classroom. Real results.</h1>
-        <img src="./assets/underline.png" alt="emphasis on real results">
-        <p>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
-        <ul>
-          <li><a href="#">Learners</a></li>
-          <li><a href="#">Teachers</a></li>
-          <li><a href="#">Districts</a></li>
-          <li><a href="#">Parents</a></li>
-        </ul>
-      </section>
-    </main>
-
-    <section>
-      <h2>Why Khan Academy works</h2>
-    </section>
-
+    </div>
     
   </body>
 </html>
