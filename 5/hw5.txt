@@ -9,7 +9,7 @@ Do: Practice Typing - https://www.keybr.com/
 New
 
 --Do: Finish Simple Site Lab from class-04 (HTML & CSS)
-Do: Complete The Three Layouts (last few slides)
+--Do: Complete The Three Layouts (last few slides)
 Read: https://learn.shayhowe.com/advanced-html-css/responsive-web-design/
 
 

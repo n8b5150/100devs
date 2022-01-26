@@ -1,40 +1,27 @@
-/******************************************
-/* CSS
-/*******************************************/
 
-/* Box Model Hack */
 *{
   box-sizing: border-box;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-
 header{
   height: 100px;
 }
-div{
+.one{
   height: 150px;
 }
-section{
+.two,.three{
   height: 200px;
   float: left;
-  width: 50%;
+  width: 40%;
+}
+.three{
+  width: 60%;
 }
 footer{
   height: 100px;
   clear: both;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 header,section,footer{
   border: 1px solid black;
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
