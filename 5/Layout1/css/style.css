@@ -1,0 +1,40 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+  height: 100px;
+}
+.containerOne section{
+  float: left;
+  height: 150px;
+  width: 33.3333%
+}
+
+.containerTwo section{
+  float: left;
+  height: 200px;
+  width: 50%;
+}
+
+footer{
+  height: 100px;
+  clear: both;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header,footer,section{
+  border: 1px solid black;
+}

@@ -21,3 +21,6 @@ Other work will be assigned, but nothing due Tuesday specifically of next week
 
 
 --------Notes--------
+use classes on containing elements, relationships to target inside the containers
+
+use id's for javascript
