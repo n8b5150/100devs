@@ -1,0 +1,24 @@
+header
+nav
+ul-li-a
+form
+
+section
+h2 h2
+
+section
+section 
+h1
+p
+span
+
+section w/4 sections
+h3
+span
+
+section
+h2 (news)
+3 sections or articles
+h3
+p
+span

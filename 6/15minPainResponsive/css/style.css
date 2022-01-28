@@ -1,0 +1,47 @@
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  height: 100px;
+}
+section{
+  height: 200px;
+  float: left;
+  width: 33.3333%;
+}
+footer{
+  height: 100px;
+  clear: both;
+}
+
+header,section,footer{
+  border: 1px solid black;
+}
+
+/* responsiveness */
+@media (min-width: 1200px){
+  header,div,footer{
+    width: 1000px;
+    margin: auto;
+  }
+  section{
+    width: 333px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 800px){
+  section{
+    width: 50%;
+  }
+  section + section + section{
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  section{
+    width: 100%;
+  }
+}
