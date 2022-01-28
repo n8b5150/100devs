@@ -24,6 +24,6 @@ span{
 section{
     width: 25%;
     height: 200px;
-    text-align: center;
+    margin: 0 auto;
     border: 2px solid purple;
 }
