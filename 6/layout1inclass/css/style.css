@@ -21,20 +21,24 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header,footer{
+     height: 100px;
+     border: 2px solid black;
 }
-
-footer {
-
+section{
+     height: 200px;
+     width: 33.3333%;
+     border: 2px solid black;
+     float: left;
+}
+.bigBottom{
+     width: 50%;
+     height: 300px;
 }
 
 /******************************************
@@ -43,6 +47,15 @@ footer {
 
 
 
+
+
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/
+
+
+@media screen and (max-width: 800px){
+     section{
+          background: blue;
+     }
+}
