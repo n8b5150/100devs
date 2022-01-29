@@ -56,6 +56,18 @@ section{
 
 @media screen and (max-width: 800px){
      section{
+          background: yellow;
+     }
+     section + section{
+          background: green;
+     }
+     section + section + section{
+          background: purple;
+     }
+     section + section + section + section{
           background: blue;
+     }
+     section + section + section + section + section{
+          background: magenta;
      }
 }
