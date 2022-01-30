@@ -15,12 +15,12 @@ a{
   color: #42af2e;
 }
 p,h1{
-  font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+  font-family: 'Times', 'Times New Roman', serif;
 }
 h1{
   font-style: italic;
   font-size: 2.5rem;
-  font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+  font-family: 'Times', 'Times New Roman', serif;
 }
 h2{
   font-size: 1.75rem;
@@ -48,4 +48,13 @@ li + li{
   border-top: 0;
   border-right: 0;
   border-bottom: 0;
+}
+p::first-letter{
+  font-size: 30px;
+}
+p::nth-child(2n+1){
+  font-size: 30px;
+}
+p:after{
+  
 }
