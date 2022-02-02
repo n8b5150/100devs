@@ -34,6 +34,7 @@ header,section,footer{
 @media (max-width: 1200px) and (min-width: 800px){
   section{
     width: 50%;
+    background: lightgray;
   }
   section + section + section{
     width: 100%;
@@ -43,5 +44,6 @@ header,section,footer{
 @media (max-width: 800px){
   section{
     width: 100%;
+    background: gray;
   }
 }

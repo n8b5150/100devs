@@ -1,0 +1,282 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #fff;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* containing floats contFloat boxContFloat */
+.box-set,
+.box {
+  border-radius: 6px;
+}
+.box-set {
+  background: #eaeaed;
+}
+.box {
+  background: #2db34a;
+  float: left;
+  margin: 1.858736059%;
+  padding: 20px 0;
+  text-align: center;
+  width: 29.615861214%;
+}
+
+/* containing with overflow */
+
+.contFOF {
+  background: #eaeaed;
+  overflow: auto;
+  clear: both;
+}
+
+/* containing with overflow pitfall */
+
+.contFOFPit {
+  background: #eaeaed;
+  overflow: auto;
+  clear: both;
+}
+.boxContFOFPit {
+  background: #2db34a;
+  box-shadow: 0 15px 20px #ff7b29;
+  border-radius: 6px;
+  float: left;
+  margin: 1.858736059%;
+  padding: 20px 0;
+  text-align: center;
+  width: 29.615861214%;
+}
+.boxContFOFPit:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+
+/* clearfix */
+
+.contFCF:before,
+.contFCF:after {
+  content: "";
+  display: table;
+}
+.contFCF:after {
+  clear: both;
+}
+.contFCF {
+  background: #eaeaed;
+  *zoom: 1;
+}
+.boxContFCF {
+  background: #2db34a;
+  box-shadow: 0 15px 20px #ff7b29;
+  border-radius: 6px;
+  float: left;
+  margin: 1.858736059%;
+  padding: 20px 0;
+  text-align: center;
+  width: 29.615861214%;
+}
+.boxContFCF:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+
+
+/******************************************
+/* Positioning
+/*******************************************/
+
+/* Static */
+.setStatic{
+  clear: both;
+}
+.boxStatic {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  display: static;
+}
+
+/* relative */
+.setRel{
+  clear: both;
+}
+.boxRel {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 80px;
+  line-height: 80px;
+  position: relative; 
+  text-align: center;
+  width: 80px;
+}
+.box-1Rel {
+    top: 20px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+  }
+.box-2Rel {
+  top: 20px;
+  right: 3px;
+  bottom: 3px;
+  left: 40px;
+}
+.box-3Rel {
+  top: 20px;
+  right: 20px;
+  bottom: -10px;
+  left: 3px;
+}
+.box-4Rel {
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+}
+
+/* absolute */
+.setAbs{
+  clear: both;
+}
+.setAbs {
+  background: #eaeaed;
+  height: 200px;
+  position: relative;
+}
+.boxAbs {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 80px;
+  line-height: 80px;
+  position: absolute; 
+  text-align: center;
+  width: 80px;
+}
+
+/* top supercedes bottom, left supercedes right */
+.box-1Abs {
+  top: 10px;
+  left: 10px;
+}
+.box-2Abs {
+  top: 3px;
+  right: 40px;
+}
+.box-3Abs {
+  bottom: 30px;
+  left: 30px;
+}
+.box-4Abs {
+  right: 30px;
+  bottom: 30px;
+}
+
+/* fixed */
+.setFixed {
+  background: #eaeaed;
+  height: 200px;
+}
+.boxFixed {
+  background: rgba(100,200,75,.5);
+  border-radius: 6px;
+  height: 80px;
+  line-height: 80px;
+  position: fixed; 
+  text-align: center;
+  width: 80px;
+}
+.box-1Fixed {
+  top: 6%;
+  left: 2%;
+}
+.box-2Fixed {
+  top: 0;
+  right: -40px;
+}
+.box-3Fixed {
+  bottom: -10px;
+  right: 20px;
+}
+.box-4Fixed {
+  bottom: 0;
+}
+
+footer {
+  background: rgba(100,200,75,.3);
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+
+/* z index */
+
+.box-setZ {
+  background: #eaeaed;
+  height: 160px;
+  position: relative;
+  clear: both;
+  margin-top: 10px;
+}
+.boxZ {
+  background: #2db34a;
+  border: 2px solid #ff7b29;
+  border-radius: 6px;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+}
+.box-1Z {
+  left: 10px;
+  top: 10px;
+}
+.box-2Z {
+  bottom: 10px;
+  left: 70px;
+  z-index: 3;
+}
+.box-3Z {
+  left: 130px;
+  top: 10px;
+  z-index: 2;
+}
+.box-4Z {
+  bottom: 10px;
+  left: 190px;
+  z-index: 1;
+}
