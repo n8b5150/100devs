@@ -119,10 +119,10 @@ body {
 .boxStatic {
   background: #2db34a;
   border-radius: 6px;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
-  width: 80px;
+  width: 100px;
   display: static;
 }
 
@@ -133,11 +133,11 @@ body {
 .boxRel {
   background: #2db34a;
   border-radius: 6px;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   position: relative; 
   text-align: center;
-  width: 80px;
+  width: 100px;
 }
 .box-1Rel {
     top: 20px;
@@ -176,11 +176,11 @@ body {
 .boxAbs {
   background: #2db34a;
   border-radius: 6px;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   position: absolute; 
   text-align: center;
-  width: 80px;
+  width: 100px;
 }
 
 /* top supercedes bottom, left supercedes right */
@@ -209,11 +209,12 @@ body {
 .boxFixed {
   background: rgba(100,200,75,.5);
   border-radius: 6px;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   position: fixed; 
   text-align: center;
-  width: 80px;
+  width: 100px;
+  z-index: 4;
 }
 .box-1Fixed {
   top: 6%;
@@ -235,7 +236,7 @@ footer {
   background: rgba(100,200,75,.3);
   bottom: 0;
   left: 0;
-  padding: 20px 0;
+  padding: 60px 0;
   position: fixed;
   right: 0;
   text-align: center;
@@ -255,15 +256,16 @@ footer {
   background: #2db34a;
   border: 2px solid #ff7b29;
   border-radius: 6px;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   position: absolute;
   text-align: center;
-  width: 80px;
+  width: 100px;
 }
 .box-1Z {
   left: 10px;
   top: 10px;
+  z-index: 4;
 }
 .box-2Z {
   bottom: 10px;
