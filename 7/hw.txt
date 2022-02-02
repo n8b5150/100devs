@@ -1,0 +1,13 @@
+Due Thursday (Feb. 3rd)- 
+Do: Make 15 minutes of pain responsive (3 media queries and using floats)
+Read: http://learnlayout.com/
+Read: https://learn.shayhowe.com/advanced-html-css/
+Do: Practice Typing - https://www.keybr.com/
+
+Homework (Due Tuesday - Feb. 8th):
+Read: css-tricks.com/snippets/css/a-guide-to-flexbox
+Do: http://flexboxfroggy.com/
+Watch: Independence Day
+Do: Layout Assignment (will share Thursday)
+
+No homework due today!
