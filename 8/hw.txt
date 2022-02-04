@@ -4,7 +4,7 @@ Read: css-tricks.com/snippets/css/a-guide-to-flexbox
 -Do: http://flexboxfroggy.com/
 Watch: Independence Day
 
-Homework (Due Tuesday - Feb. 10th):
+Homework (Due Thursday - Feb. 10th):
 Do: The 3 layouts we did in class
 Do: The Level Ground & Source Layouts in the homework-layout-photos
 Push?: Do Pushwork Homepage and add media queries to other layouts
