@@ -26,12 +26,16 @@ body {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 header,header a {
   background: black;
   color: white;
 }
 nav {
+  color: white;
+}
+.half a {
   color: white;
 }
 /******************************************
@@ -42,34 +46,94 @@ header {
 }
 nav * {
   float: left;
-  width: 10%;
   display: block;
+}
+nav a {
+  padding: 10px;
 }
 nav ul {
   width: 50%;
 }
+nav ul li {
+  width: 11%
+}
+nav ul li a {
+  padding: 0;
+  margin: 0;
+}
 nav form input {
-  width: 100%;
+  width: 80%;
+}
+nav form {
+  width: 15%;
+  margin-top: 10px;
 }
 .thirds {
   float: left;
   width: 33.3333%;
 }
+.thirds h3,.thirds p,.thirds span {
+  padding: 0 10px;
+}
 .half {
-  height: 500px;
   float: left;
   width: 50%;
 }
-.quarter{
-  height: 250px;
+.headlineHalf {
+  padding: 25% 10px 0 10px;
+}
+.quarter {
   float: left;
   width: 50%;
+  padding: 5% 10px 0 10px;
+}
+.welcome {
+  float: left;
+  width: 50%;
+}
+.date {
+  text-align: right;
 }
 /******************************************
-/* ADDITIONAL STYLES
+/* Images
 /*******************************************/
 
-
+.headlineHalf {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/israel.jpg");
+}
+.q1 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/gohome.jpg");
+}
+.q2 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/vaccine.jpg");
+}
+.q3 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/workgyms.webp");
+}
+.q4 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../assets/folksinger.webp");
+}
+.thirds img{
+  border: 5px solid white ;
+  width: 100%
+}
+.q1,.q2,.q3,.q4,.headlineHalf{
+  background-repeat: no-repeat;
+  background-size: contain;
+  border:2px solid white;
+}
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/
+
+@media screen and (max-width: 1200px) {
+  .thirds,.half {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+  }
+  nav ul,nav ul li {
+    width: 33.3333%
+  }
+}

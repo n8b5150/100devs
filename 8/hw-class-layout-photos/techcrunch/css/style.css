@@ -22,28 +22,56 @@ clear: both;
 /*******************************************/
 
 body {
- font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
-
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav a {
+  color: blue;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
-nav,main,aside {
+nav,main,aside,div,section {
   float: left
+}
+nav * {
+  display: block;
+  margin: 0;
+  padding: 3px 3px;
+}
+nav input {
+  border: 0;
+  width: 100%;
 }
 nav {
   width: 10%;
+  padding-left: 5px;
 }
 
 main {
   width: 50%;
+  padding: 0 10px;
 }
 
 aside {
   width: 40%;
 }
-
+section {
+  width: 33.3333%;
+  padding: 0 10px;
+}
+div {
+  margin-left: 10%;
+}
+img {
+  max-width: 100%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -52,3 +80,16 @@ aside {
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 90%;
+  }
+  aside {
+    width: 90%;
+    margin-left: 10%;
+  }
+  section {
+    width: 100%;
+  }
+}

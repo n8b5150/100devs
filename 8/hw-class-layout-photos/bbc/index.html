@@ -14,38 +14,38 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
+		<header class="clear">
 			<nav>
-				<img src="assets/bbclogo.png" alt="bbc logo">
-				<a href=""><img src="assets/signin.png" alt="sign in icon"> Sign in</a>
+				<a href="#"><img src="assets/bbclogo.png" alt="bbc logo" width="94px"></a>
+				<a href="#"><img src="assets/signin.png" alt="sign in icon" width="26px"> Sign in</a>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">News</a></li>
-					<li><a href="">Sports</a></li>
-					<li><a href="">Reel</a></li>
-					<li><a href="">Worklife</a></li>
-					<li><a href="">Travel</a></li>
-					<li><a href="">Future</a></li>
-					<li><a href="">Culture</a></li>
-					<li><a href="">More</a></li>
+					<li class="hide"><a href="#">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Sports</a></li>
+					<li class="hide"><a href="#">Reel</a></li>
+					<li class="hide"><a href="#">Worklife</a></li>
+					<li class="hide"><a href="#">Travel</a></li>
+					<li class="hide"><a href="#">Future</a></li>
+					<li class="hide"><a href="#">Culture</a></li>
+					<li><a href="#">More</a></li>
 				</ul>
 				<form>
-					<input type="search" placeholder="Search"><img src="assets/search.png" alt="search icon">
+					<input type="search" placeholder="Search"><img src="assets/search.png" alt="search icon" width="24px">
 				</form>
 			</nav>
 		</header>
 
 		
-		<section>
+		<section class="welcome">
 			<h2>Welcome to BBC.com</h2>
 		</section>
-		<section>
+		<section class="welcome date">
 			<h2>Thursday, 13 August</h2>
 		</section>
 
-		<main>
+		<main class="clear">
 			<section class="half">
-				<section>
+				<section class="headlineHalf">
 					<a href="#">
 						<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero non velit delectus reiciendis minima aspernatur ex esse consequuntur hic inventore.</p>
@@ -54,25 +54,25 @@
 				</section>
 			</section>
 			<section class="half">
-				<section class="quarter">
+				<section class="quarter q1">
 					<a href="#">
 						<h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
 						<span>Canada</span>
 					</a>
 				</section>
-				<section class="quarter">
+				<section class="quarter q2">
 					<a href="#">
 						<h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
 						<span>Health</span>
 					</a>
 				</section>
-				<section class="quarter">
+				<section class="quarter q3">
 					<a href="#">
 						<h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
 						<span>Worklife</span>
 					</a>
 				</section>
-				<section class="quarter">
+				<section class="quarter q4">
 					<a href="#">
 						<h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
 						<span>Culture</span>
@@ -81,9 +81,9 @@
 			</section>
 		</main>
 		
-		<section><h2>News</h2></section>
+		<div class="clear"><h2>News</h2></div>
 
-		<section>
+		<div>
 			<section class="thirds">
 				<a href="#">
 					<img src="assets/bidenharris.jpg" alt="biden funny face, harris giggling">
@@ -108,7 +108,7 @@
 					<span>US Election 2020</span>
 				</a>
 			</section>
-		</section>
+		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
