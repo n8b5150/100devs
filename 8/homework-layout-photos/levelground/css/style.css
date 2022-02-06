@@ -83,6 +83,9 @@ footer,footer div {
 footer div{
   border-top: 1px solid #dbdfe2;
 }
+footer address {
+  font-weight: 300;
+}
 footer address, footer a,footer span{
   color: #dbdfe2;
   font-style: normal;
@@ -104,28 +107,73 @@ footer section + section h5 {
 body * {
   text-align: center;
 }
+p{
+  padding-bottom: 1rem;
+}
 header {
   height: 60px;
+}
+header nav a {
+  display: inline-block;
+  width: 10%;
+  padding: 5px 0;
+  vertical-align: middle;
+}
+header nav > a:first-child + a + a {
+  width: 60%;
+}
+header nav a:last-of-type {
+  width: 10%;
+}
+header + section {
+  padding: 0 10% 3% 10%;
+}
+header + section + section {
+  padding: 0 20% 3% 20%;
+}
+div section:first-child{
+  padding: 5% 1% 5% 10%;
+}
+div section + section{
+  padding: 5% 10% 5% 1%;
+}
+header + section + section + div + section {
+  padding: 0 20% 3% 20%;
 }
 nav span{
   background: #dbdfe2;
   color: #66768a;
   border-radius: 5px;
+  padding: .5rem 1.5rem;
 }
 div section, footer section {
   float: left;
   width: 50%;
 }
+footer a {
+  font-weight: 700;
+  padding-left: 1%;
+}
 footer section {
   width: 80%;
   text-align: left;
+  padding: 2%;
 }
 footer section + section {
   width: 20%;
+  padding-right: 3%;
 }
 footer div{
-text-align: left;
-margin: 0 5%;
+  text-align: left;
+  margin: 0 3%;
+}
+footer div * {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer div img {
+  position: relative;
+  left: 50%;
 }
 footer section + section h5 + h5 {
   padding-top: 0;
