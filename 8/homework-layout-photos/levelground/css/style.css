@@ -18,24 +18,120 @@ clear: both;
 }
 
 /******************************************
-/* BASE STYLES #f7f8fav #dbdfe2 #66768a #161f2a
+/* BASE STYLES #f7f8fa #dbdfe2 #66768a #161f2a
 /*******************************************/
 
 body {
-
+  background: #f7f8fa;
+  font-family: 'BenchNine', 'Arial Narrow', 'Helvetica', 'Arial', sans-serif;
 }
+p {
+  font-size: 1.25rem;
+}
+header,header + section {
+  background: #66768a;
+}
+header + section {
+  color: #dbdfe2;
+  border: 0;
+}
+header a,h1,h2,h3,h5 {
+  font-weight: 700;
+  margin: 0;
+  padding: 3% 1% 0 1%;
+  color: #f7f8fa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 4.25rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h2,h3,h4 {
+  color: #161f2a;
+}
+h5 {
+  color: #66768a; 
+  font-size: 1rem;
+}
+header + section span{
+  display: inline-block;
+  vertical-align: bottom;
+  border: 0;
+  height: 35px;
+  padding: 0;
+  margin-bottom: -2px;
+  text-transform: none;
+  font-size: 1.25rem;
+}
+div section{
+  background: #dbdfe2;
+}
+section span {
+  border: 1px solid #161f2a;
+  text-transform: uppercase;
+  padding: 2% 5%;
+}
+footer,footer div {
+  background: #161f2a;
+}
+footer div{
+  border-top: 1px solid #dbdfe2;
+}
+footer address, footer a,footer span{
+  color: #dbdfe2;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+}
+footer h5{
+  color: #66768a;
+  text-align: left;
+ }
+footer section + section h5 {
+   color: #dbdfe2;
+ }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body * {
+  text-align: center;
+}
 header {
-
+  height: 60px;
+}
+nav span{
+  background: #dbdfe2;
+  color: #66768a;
+  border-radius: 5px;
+}
+div section, footer section {
+  float: left;
+  width: 50%;
+}
+footer section {
+  width: 80%;
+  text-align: left;
+}
+footer section + section {
+  width: 20%;
+}
+footer div{
+text-align: left;
+margin: 0 5%;
+}
+footer section + section h5 + h5 {
+  padding-top: 0;
+  padding-bottom: 3%;
 }
 
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
