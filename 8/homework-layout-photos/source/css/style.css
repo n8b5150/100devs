@@ -18,23 +18,84 @@ clear: both;
 }
 
 /******************************************
-/* BASE STYLES colors: #ffffff #e1e9f0 #e1e9f0 #304659
+/* BASE STYLES colors: #ffffff #f5f9fc #e1e9f0 #304659
 /*******************************************/
 
 body {
-
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #f5f9fc;
+  color: #304659;
 }
-
-
+a {
+  text-decoration: none;
+  color: #304659;
+}
+.bottom {
+  background: white;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+  height: 60px;
 }
-
-footer {
-
+header a,header nav,header nav ul li {
+  float: left;
+}
+.buttonA {
+  padding-left: 0;
+}
+header > a {
+  width: 10%;
+  padding: 10px 20px;
+}
+nav {
+  width:80%;
+}
+nav ul{
+  float: left;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px 10% 5px 25%;
+}
+nav ul li {
+  padding: 10px 15px; 
+}
+main > section {
+  float: left;
+  width: 50%;
+}
+input {
+  border: 0;
+  background: #e1e9f0;
+  padding: 5px;
+  color: #9eadbb;
+}
+input + span,.button {
+  padding: 5px 10px;
+  background: #304659;
+  color: #f5f9fc
+}
+div > section {
+  float: left;
+  width: 25%;
+  padding: 10px 10px 40px 10px;
+}
+main,div,.bottom{
+  padding: 20px 10%;
+}
+.bottom > section {
+  height:200px;
+  margin: 0 auto;
+  background: #f5f9fc;
+}
+.hide {
+  display: none;
+  width: 0%;
 }
 
 /******************************************
@@ -45,3 +106,49 @@ footer {
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/
+
+@media screen and (max-width: 650px) {
+  .hide {
+    display: block;
+  }
+  .show {
+    display: none;
+  }
+  main > section {
+    width: 100%;
+  }
+  div > section {
+    width: 100%;
+  }
+  .logoA {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  input {
+    border: 0;
+    background: #e1e9f0;
+    padding: 5px;
+    color: #9eadbb;
+    width: 400px;
+  }
+  input + span,.button {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 400px;
+    background: #304659;
+    color: #f5f9fc
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1100px) {
+  nav > ul {
+    padding: 5px 5% 5px 15%;
+  }
+  div > section {
+    width: 50%;
+  }
+}
