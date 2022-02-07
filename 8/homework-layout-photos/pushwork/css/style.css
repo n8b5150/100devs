@@ -115,20 +115,28 @@ main section,.half,.half > section {
 .half {
   padding: 10px;
 }
+.half > section {
+  width: 200px;
+  margin: 5px 5px;
+  background: white;
+  text-align: center;
+}
 main,div,footer {
   padding: 10px 10px 10px 20px;
 }
 
 .imageFrame,section.imageFrame2 {
   border: 20px solid white;
+  border-width: 20px 40px;
   border-radius: 20px;
   background: #DDDFE9;
-  height: 400px;
+  aspect-ratio: 1.25;
   width: 100%;
 }
 .imageFrame *,.featureDark *,.featureLight *,section.imageFrame2 * {
   display: block;
   text-align: center;
+  margin: auto auto;
 }
 .imageFrameInner,.featureDark,.featureLight,section.imageFrameInner2 {
   background: #151b29;
@@ -140,8 +148,8 @@ main,div,footer {
   color: #151b29;
   background:#DDDFE9;
 }
-.imageFrameInner img,.featureDark img,.featureLight img,section.imageFrameInner2 {
-  padding: 35px 75px 5px 75px;
+.imageFrameInner img,.featureDark img,.featureLight img,section.imageFrameInner2 img{
+  padding-top: 20%;
 }
 section.imageFrame2 {
   border: 0;
@@ -180,7 +188,7 @@ footer section:first-of-type {
 /* RESPONSIVENESS
 /*******************************************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   main section,.half {
     clear: both;
     float: left;
