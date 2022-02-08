@@ -45,9 +45,30 @@ ul {
 li {
   display: inline-block;
 }
-header,header *,main,main *{
-  background:#151b29;
+header a {
+  background: transparent;
   color: #f7f8fa;
+}
+header{
+  background: linear-gradient(to right, #0C101C, #232C3B);
+  /* background:#151b29; */
+  color: #f7f8fa;
+}
+main {
+  background: 
+    linear-gradient(175deg, transparent 80%, #f7f8fa 80.25%),
+    linear-gradient(to right, #0C101C, #232C3B);
+    /* linear-gradient(175deg, transparent 80%, #f7f8fa 81%); */
+  color: #f7f8fa;
+}
+.buttonLight + a {
+  color: #f7f8fa;
+}
+.specialbg {
+  background: 
+    linear-gradient(175deg, #f7f8fa 56%, transparent 57%),
+    linear-gradient(to right,#232C3B, #0C101C);
+  padding: 40px;
 }
 .bgDark {
   background: linear-gradient(to right,#232C3B, #0C101C);
