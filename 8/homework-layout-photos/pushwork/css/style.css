@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Clear fix hack */
@@ -13,7 +15,7 @@
   height: 0;
 }
 
-.clear {
+.clear,div,main {
 clear: both;
 }
 
@@ -22,19 +24,222 @@ clear: both;
 /*******************************************/
 
 body {
-
+  font-family: 'Titillium Web', 'Arial Narrow', 'Arial', 'Helvetica', sans-serif;
+  color: #151b29;
+  background: #f7f8fa;
 }
-
+a {
+  text-decoration: none;
+  color: #151b29;
+  text-transform: uppercase;
+  font-size: .75rem;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+.center {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+header a {
+  background: transparent;
+  color: #f7f8fa;
+}
+header {
+  background: linear-gradient(to right, #0C101C, #232C3B);
+  /* background:#151b29; */
+  color: #f7f8fa;
+}
+main {
+  background: 
+    linear-gradient(175deg, transparent 80%, #f7f8fa 80.25%),
+    linear-gradient(to right, #0C101C, #232C3B);
+  color: #f7f8fa;
+}
+.buttonLight + a {
+  color: #f7f8fa;
+}
+.specialbg {
+  background:
+    linear-gradient(to bottom right, #f7f8fa 49%, transparent 50%),
+    linear-gradient(to right,#232C3B, #0C101C);
+  padding: 40px;
+}
+.bgDark {
+  background: linear-gradient(to right,#232C3B, #0C101C);
+  color: #f7f8fa;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  padding-top: 1rem;
+}
+h2 + h2 {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+h4 {
+  padding-top: 0;
+}
+p {
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+.half > section {
+  background:#DDDFE9;
+}
+.buttonLight,.buttonDark,.buttonGray {
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  background:#151b29;
+  color:#f7f8fa;
+}
+.buttonLight {
+  background:#f7f8fa;
+  color: #151b29;
+}
+.buttonGray {
+  background: #2F3340;
+  color:#f7f8fa;
+}
+.quoteNav {
+  float: left;
+  width: 25%;
+}
+.quoteNavMid {
+  float: left;
+  width: 50%;
+}
+.attribution * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.quote {
+ background: white;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+  height: 60px;
+}
+header img,header nav {
+  float: left;
+  padding: 10px;
+}
+header nav {
+  width: 90%;
+  text-align: right;
+  padding-top: 15px;
+}
+nav ul{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  padding-right: 2%;
+  padding-left: 0;
+  margin: 0;
+}
+.circleLogo {
+  float: left;
+  border: 4px solid #f7f8fa;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  margin: 12px 20px;
+}
+main section,.half,.half > section {
+  float: left;
+  width: 50%;
+}
+main section{
+  padding: 20px;
+}
+.half {
+  padding: 10px;
+}
+.half > section {
+  width: 200px;
+  margin: 5px 5px;
+  background: white;
+  text-align: center;
+}
+main,div,footer {
+  padding: 10px 10px 10px 20px;
 }
 
-footer {
+.imageFrame,section.imageFrame2 {
+  border: 20px solid white;
+  border-width: 20px 40px;
+  border-radius: 20px;
+  background: #DDDFE9;
+  aspect-ratio: 1.25;
+  width: 100%;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,.2);
+  max-height: 350px;
+}
+.imageFrame *,.featureDark *,.featureLight *,section.imageFrame2 * {
+  display: block;
+  text-align: center;
+  margin: auto auto;
+}
+.imageFrameInner,.featureDark,.featureLight,section.imageFrameInner2 {
+  background: #151b29;
+  color:#DDDFE9;
+  height: 125px;
+  width: 200px;
+}
+.imageFrameInner {
+  margin-top: 25%;
+  margin-left: 23%;
+}
+section.imageFrameInner2 {
+  margin-top: 30%;
+  margin-left: 20%;
+}
+.featureLight {
+  color: #151b29;
+  background:#DDDFE9;
+}
+.imageFrameInner img,.featureDark img,.featureLight img,section.imageFrameInner2 img{
+  padding-top: 20%;
+}
+section.imageFrame2 {
+  border: 0;
+  border-radius: 10px;
+  aspect-ratio: 1;
+  height: auto;
+  max-height: 350px;
+}
 
+footer section {
+  float: left;
+  width: 15%
+}
+footer section:first-of-type {
+  width: 20%;
+}
+
+.bgDark ul li {
+  display: inline-block;
+  width: 20%;
+  padding: 10px 20px;
+  background:#f7f8fa;
+  color:#151b29;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+.bgDark ul{
+  padding: 10px 5px;
 }
 
 /******************************************
@@ -45,3 +250,45 @@ footer {
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/
+
+@media screen and (min-width: 500px) and  (max-width: 750px) {
+  main section,.half {
+    clear: both;
+    float: left;
+    width: 100%;
+  }
+  .bgDark ul li {
+    display: inline-block;
+    width: 40%;
+  }
+  header nav{
+    width: 75%;
+  } 
+  nav ul li {
+    padding-right: 0;
+  }
+  .hide750 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main section,.half {
+    clear: both;
+    float: left;
+    width: 100%;
+  }
+  .bgDark ul li {
+    display: inline-block;
+    width: 40%;
+  }
+  header nav{
+    width: 75%;
+  } 
+  nav ul li {
+    padding-right: 0;
+  }
+  .hide750,.hide500 {
+    display: none;
+  }
+}
