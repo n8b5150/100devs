@@ -22,19 +22,256 @@ clear: both;
 /*******************************************/
 
 body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+li{
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+h1,h2 {
+  font-family: 'Prata', 'Times New Roman', serif;
+}
+h3 {
 
 }
-
+h4{
+  margin-bottom: 1rem;
+  color: #ff8800;
+}
+span {
+  color: white;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* header and nav */
+.top-container {
+  width: 100%;
+  aspect-ratio: 2;
+  background: url(../first_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+}
+header > a {
+  float: left;
+  margin: 2rem 0 0 6rem;
+}
+nav {
+  float: right;
+  margin-right: 2rem;
+}
+nav ul li{
+  padding: 1rem;
 }
 
-footer {
+div > header + section {
+  float: left;
+  width: 75%;
+}
 
+/* section One */
+
+h1 {
+  margin: 5% 4rem 1rem 4rem;
+}
+form {
+  margin-left: 4rem;
+}
+form input {
+  height: 2.5rem;
+  width: 50%;
+  margin: 0;
+  border: 2px solid rgba(100,100,100,.25);
+  border-radius: 10px;
+  padding: 1rem;
+}
+form span {
+  background: #ff8800;
+  padding: .66rem 1rem;
+  margin-left: -1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+form + section {
+  margin-left: 4rem;
+  padding-top: 2rem;
+}
+form + section a {
+  padding-right: 1rem;
+}
+
+/* section Two */
+
+.containerTwo {
+  width: 100%;
+  aspect-ratio: 2;
+  background: url(../secondbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerTwo > section {
+  padding: 2rem 15% 5rem 40%
+}
+.containerTwo span {
+  background: #ff8800;
+  padding: .67rem 1rem;
+  height: 2.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.containerTwo > section span + span {
+  background: #ffaa4d;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* section Three */
+
+.containerThree {
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(to right, rgba(216, 226, 230,1), 25%, rgba(243, 247, 248,1))
+}
+.containerThree > h4 + h2 + ul > li {
+  border-bottom: 1px solid rgba(100,100,100,.25);
+  padding: 10px;
+
+}
+.containerThree > h4 + h2 + ul > li:hover {
+  color: #ff8800;
+  border-bottom: 1px solid #ff8800;
+}
+.containerThree section {
+  background: rgba(100,100,100,.25);
+  display: inline-block;
+  width: 20%;
+  aspect-ratio: .75;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+.containerThree section:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.indicatorList {
+  margin: 0;
+}
+.indicator{
+  border-radius: 50%;
+  /* border: 4px solid #ff8800; */
+  background: #ffaa4d;
+  width: .5rem;
+  aspect-ratio: 1;
+  margin: 0 .5rem 0 .5rem;
+  transition-duration: 100ms;
+  vertical-align: middle;
+}
+.indicatorMenuOne:hover,
+.indicatorMenuTwo:hover,
+.indicatorMenuThree:hover,
+.indicatorMenuFour:hover,
+.indicatorMenuFive:hover,
+.indicatorMenuSix:hover,
+.indicatorTestimonyOne:hover,
+.indicatorTestimonyTwo:hover,
+.indicatorTestimonyThree:hover,
+.indicatorTestimonyFour:hover,
+.indicatorTestimonyFive:hover{
+  transition-duration: 100ms;
+  background: #ff8800;
+  width: 1rem;
+  aspect-ratio: 1;
+  /* border-width: 7px; */
+}
+.indicatorMenuOne:active,
+.indicatorMenuTwo:active,
+.indicatorMenuThree:active,
+.indicatorMenuFour:active,
+.indicatorMenuFive:active,
+.indicatorMenuSix:active,
+.indicatorTestimonyOne:active,
+.indicatorTestimonyTwo:active,
+.indicatorTestimonyThree:active,
+.indicatorTestimonyFour:active,
+.indicatorTestimonyFive:active{
+  transition-duration: 100ms;
+  background: #ffaa4d;
+  width: 1.25rem;
+  aspect-ratio: 1;
+  /* border-width: 10px; */
+}
+
+/* section Four */
+
+.containerFour {
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(to right, rgba(243, 247, 248,1), 75%, rgba(216, 226, 230,1));
+}
+.hours {
+  width: 75%;
+  margin-left: 20%;
+}
+.hoursLeft,.hoursRight {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+}
+.containerFour .gallery {
+  width: 100%;
+}
+.gallery span,.gallery img {
+  display: inline-block;
+  color:#ff8800;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+.gallery img {
+  max-width: 50%;
+  margin-bottom: 5rem;
+}
+.gallery span {
+  border: 1px solid #ff8800;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 3%;
+  text-align: center;
+  vertical-align: middle;
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+/* section Five */
+
+.containerFive {
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(to right, rgba(216, 226, 230,1), 25%, rgba(243, 247, 248,1))
+}
+
+.containerFive p {
+  width: 75%;
+  margin: 0 auto;
 }
 
 /******************************************

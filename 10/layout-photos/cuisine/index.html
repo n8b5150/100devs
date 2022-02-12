@@ -10,14 +10,18 @@
 
 		<!-- external CSS link -->
 		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
-<!-- section One  -->
+<!-- header and nav  -->
 		<div class="top-container">
 			<header>
+				<a href=""><img src="" alt="logo" width="40px" height="30px"></a>
 				<nav>
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -31,8 +35,9 @@
 					</ul>
 				</nav>
 			</header>
-			<section>
-				<h1>Welcome To Our Cuisine Restaurant</h1>
+<!-- section One  -->
+			<section class="clear clearfix">
+				<h1>Welcome<br> To Our Cuisine<br> Restaurant</h1>
 				<form action="">
 					<input type="search" placeholder="Search here">
 					<span>Location</span>
@@ -46,7 +51,7 @@
 		</div>
 
 <!-- section Two -->
-		<div>
+		<div class="containerTwo">
 			<section>
 				<h4>About us</h4>
 				<h2>Discover Our Restaurant Story</h2>
@@ -54,12 +59,12 @@
 				</p>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur recusandae repellendus eius praesentium ullam porro repellat fugit culpa voluptatibus asperiores.
 				</p>
-				<span><a href="">Discover Menu</span><span><img src="" alt="arrow icon" width="30px" height="30px"></a></span>
+				<a href=""><span>Discover Menu</span><span><img src="" alt="->" width="10px" height="10px"></span></a>
 			</section>
 		</div>
 
 <!-- section Three -->
-		<div>
+		<div class="containerThree">
 			<h4><a href="">Order Online Now</a></h4>
 			<h2>Our Specialty Cuisine</h2>
 			<ul>
@@ -170,36 +175,42 @@
 				<span class="button">Order Now</span>
 			</section>
 			<!-- image position indicator-->
-			<ul>
-				<li class="indicator indicatorMenuOne"></li>
-				<li class="indicator indicatorMenuTwo"></li>
-				<li class="indicator indicatorMenuThree"></li>
-				<li class="indicator indicatorMenuFour"></li>
-				<li class="indicator indicatorMenuFive"></li>
-				<li class="indicator indicatorMenuSix"></li>
+			<ul class="indicatorList">
+				<li class="indicator indicatorMenuOne"></li><!--
+				--><li class="indicator indicatorMenuTwo"></li><!--
+				--><li class="indicator indicatorMenuThree"></li><!--
+				--><li class="indicator indicatorMenuFour"></li><!--
+				--><li class="indicator indicatorMenuFive"></li><!--
+				--><li class="indicator indicatorMenuSix"></li>
 			</ul>
 		</div>
 
 <!-- section Four -->
-		<div>
+		<div class="containerFour">
 			<h4><a href="">Book Table Now</a></h4>
 			<h2>Operating Hours</h2>
-			<a href=""><img src="" alt="phone icon"></a>
+			<a href=""><img src="" alt="phone icon" width="30px" height="30px"></a>
 			<h4>Call Now</h4>
 			<h3><a href="">+12345 678 910</a></h3>
-			<section>
-				<h4>Monday to Tuesday</h4>
-				<h3>09:00 am - 22:00 pm</h3>
+			<section class="hours">
+				<section class="hoursLeft">
+					<h4>Monday to Tuesday</h4>
+					<h3>09:00 am - 22:00 pm</h3>
+				</section>
+				<section class="hoursRight">
+					<h4>Friday to Saturday</h4>
+					<h3>11:00 am - 20:00 pm</h3>
+				</section>
 			</section>
-			<section>
-				<h4>Friday to Saturday</h4>
-				<h3>11:00 am - 20:00 pm</h3>
+			<section class="gallery">
+				<span>&lt;</span>
+				<img src="cookbook.png" alt="image or video">
+				<span>&gt;</span>
 			</section>
-			<section><img src="" alt="image or video" width="300px" height="200px"></section>
 		</div>
 
 <!-- section Five -->
-		<div>
+		<div class="containerFive">
 			<h4><a href="">Testimonials</a></h4>
 			<h2>Customer's Say</h2>
 			<section class="testimonial">
@@ -215,11 +226,11 @@
 				</ul>
 				<p id="customerDescr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam eos soluta cupiditate blanditiis minima nam, molestiae ea aliquid voluptatibus.</p>
 				<ul>
-					<li class="indicator indicatorTestimonyOne"></li>
-					<li class="indicator indicatorTestimonyTwo"></li>
-					<li class="indicator indicatorTestimonyThree"></li>
-					<li class="indicator indicatorTestimonyFour"></li>
-					<li class="indicator indicatorTestimonyFive"></li>
+					<li class="indicator indicatorTestimonyOne"></li><!--
+				--><li class="indicator indicatorTestimonyTwo"></li><!--
+				--><li class="indicator indicatorTestimonyThree"></li><!--
+				--><li class="indicator indicatorTestimonyFour"></li><!--
+				--><li class="indicator indicatorTestimonyFive"></li>
 				</ul>
 			</section>
 		</div>
