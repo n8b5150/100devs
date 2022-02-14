@@ -31,11 +31,32 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p{
+  font-size: .8rem
+}
+h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin:0;
+  font-weight: 300;
+}
+h1 {
+  font-size: 4rem;
+  padding: 1rem .5rem;
+}
+h2{
+  font-size: 2rem;
+  padding: 1rem .5rem;
+  font-weight: 500;
+}
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 li {
   display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 .logo { 
   font-family: 'Dancing Script', cursive;
@@ -60,13 +81,17 @@ main section:nth-child(3n) {
 /* main section:nth-child(3n) ul {
   margin: 0 auto;
 } */
-
+.sectionTwo {
+  background: rgb(228, 222, 218);
+}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 header {
+  height: 2.5rem;
 }
 nav {
   vertical-align: middle;
@@ -84,10 +109,73 @@ nav ul {
 nav ul li {
   padding-left: .5rem;
 }
+
+/* section One */
+
 main section:nth-child(3n) ul li {
   width:25%;
   margin: 0;
   padding: 3rem;
+}
+.opener {
+  width: 60%;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+.couponDark{
+  background: black;
+  width: 10rem;
+  padding: 1rem;
+  margin: 1rem 2rem;
+}
+.hours {
+  display: inline-block;
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.hours * {
+  font-size: .75rem;
+  display: inline-block;
+  letter-spacing: .05rem;
+}
+.hours img {
+  position: relative;
+  top: 200px;
+  left: 75px;
+}
+.rotate {
+  display: block;
+  transform: rotate(90deg);
+  text-align: left;
+}
+
+/* sectionTwo */
+
+.sectionTwo {
+  
+}
+
+/* section Three */
+.sectionThree {
+  text-align: center;
+  padding: 1rem;
+}
+.sectionThree > section {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  margin: 1rem 1rem;
+}
+.alita,.ayesha,.smith {
+  background: lightgray;
+  height: 200px;
+}
+section.couponLight {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
 }
 /******************************************
 /* ADDITIONAL STYLES
