@@ -22,21 +22,73 @@ clear: both;
 /*******************************************/
 
 body {
-
+  font-family: 'Cinzel', serif;
 }
+header {
+  background: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+.logo { 
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+nav a {
+  font-size:.8rem;
+  font-weight: 700;
+}
+main {
+  background: radial-gradient(#c5bfc3, #b1a8a9,#7e6465);
+  color: white;
+}
+main section:nth-child(3n) {
+  background: white;
+  color: black;
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+}
+/* main section:nth-child(3n) ul {
+  margin: 0 auto;
+} */
+
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
 }
-
-footer {
-
+nav {
+  vertical-align: middle;
+  width: 100%;
 }
-
+nav * {
+  display: inline-block;
+}
+nav ul {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+nav ul li {
+  padding-left: .5rem;
+}
+main section:nth-child(3n) ul li {
+  width:25%;
+  margin: 0;
+  padding: 3rem;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
