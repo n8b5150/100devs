@@ -41,12 +41,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size: 4rem;
-  padding: 1rem .5rem;
+  margin: 1rem 0;
+  padding: 0;
 }
 h2{
   font-size: 2rem;
   padding: 1rem .5rem;
   font-weight: 500;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+h4 {
+  margin: 1rem 0;
+  padding: 0;
+}
+strong {
+  font-size: 2rem;
+  font-weight: 700;
 }
 ul {
   list-style: none;
@@ -75,7 +88,7 @@ main section:nth-child(3n) {
   background: white;
   color: black;
   width: 100%;
-  margin: 5rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 /* main section:nth-child(3n) ul {
@@ -115,25 +128,43 @@ nav ul li {
 main section:nth-child(3n) ul li {
   width:25%;
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
 }
 .opener {
-  width: 60%;
+  width: 80%;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 5rem 5rem;
+}
+h4 + a {
+  display: inline-block;
+  background: black;
+  padding: .75rem 1.5rem;
+  margin: 0;
 }
 .couponDark{
   background: black;
-  width: 10rem;
-  padding: 1rem;
+  width: 15rem;
+  padding: 1rem 0;
   margin: 1rem 2rem;
+}
+.couponDark h4 {
+  padding: 0 0 0 1rem;
+}
+.couponDark h4:last-of-type {
+  background: white;
+  color: black;
+  width: 9rem;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.couponDark h4:first-of-type {
+  border-left: 3px solid white;
+  padding-top: .75rem;
+  padding-bottom: .5rem
 }
 .hours {
   display: inline-block;
-  width: 35%;
-  position: absolute;
-  right: 0;
-  top: 25%;
+  width: 30%;
 }
 .hours * {
   font-size: .75rem;
@@ -141,21 +172,43 @@ main section:nth-child(3n) ul li {
   letter-spacing: .05rem;
 }
 .hours img {
-  position: relative;
-  top: 200px;
-  left: 75px;
+  position: absolute;
+  top: 600px;
+  right: 100px;
+}
+.hours img + img {
+  position: absolute;
+  top: 600px;
+  right: 150px;
 }
 .rotate {
   display: block;
   transform: rotate(90deg);
   text-align: left;
+  position: absolute;
+  right: 0;
+  top: 250px;
 }
 
 /* sectionTwo */
 
 .sectionTwo {
-  
+  padding: 2rem 5rem;
 }
+.sectionTwo h2{
+  padding-left:0;
+}
+.sectionTwo h4 {
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 9rem;
+}
+.sectionTwo section {
+  display: inline-block;
+  width: 45%;
+}
+
 
 /* section Three */
 .sectionThree {
@@ -174,8 +227,62 @@ main section:nth-child(3n) ul li {
 }
 section.couponLight {
   display: block;
+  width: 75%;
+  margin: 5rem auto;
+}
+.couponLight{
+  background: lightgray;
+  width: 15rem;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+}
+.couponLight h4 {
+  padding: 0 0 0 1rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.couponLight h4:last-of-type {
+  color: white;
+  background: black;
+  font-size: .8rem;
+  font-weight: 500;
+  width: 11rem;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.couponLight h4:first-of-type {
+  font-size: .85rem;
+  font-weight: bold;
+  padding-top: .75rem;
+  padding-bottom: .5rem
+}
+.name {
+  position: relative;
+  top: 180px;
+  background: black;
+  color:white;
   width: 90%;
-  margin: 1rem auto;
+  padding: .5rem;
+  margin: 0 auto;
+}
+.name h3{
+  font-size: 1rem;
+  font-weight:500;
+}
+.name span{
+  font-size: .75rem;
+}
+
+/* section Four */
+
+.sectionFour {
+  text-align: center;
+  margin: 0 auto;
+}
+.sectionFour span {
+  display: inline-block;
+  border-top: 4px solid black;
+  width:5%;
 }
 /******************************************
 /* ADDITIONAL STYLES
