@@ -41,7 +41,7 @@ h2 {
   font-size: 2.5rem;
   margin-top: 1rem;
 }
-h1,h2 {
+h1,h2,.price {
   font-family: 'Prata', 'Times New Roman', serif;
 }
 h3 {
@@ -51,9 +51,24 @@ h4{
   margin-bottom: 1rem;
   color: #ff8800;
 }
+h5{
+  background:#ff8800;
+  color: white;
+}
+.price {
+  font-size: 1.5rem;
+}
+.dishName {
+  font-size: 2rem;
+}
+.button{
+  background: #ff8800;
+  color: white;
+}
 span {
   color: white;
 }
+
 
 /******************************************
 /* LAYOUT
@@ -150,7 +165,7 @@ form + section a {
 .containerThree {
   text-align: center;
   padding-top: 3rem;
-  background: linear-gradient(to right, rgba(216, 226, 230,1), 25%, rgba(243, 247, 248,1))
+  background: linear-gradient(to right, rgba(216, 226, 230,1), 25%, rgba(243, 247, 248,1));
 }
 .containerThree > h4 + h2 + ul > li {
   border-bottom: 1px solid rgba(100,100,100,.25);
@@ -168,11 +183,33 @@ form + section a {
   aspect-ratio: .75;
   margin-bottom: 2%;
   margin-right: 2%;
+  vertical-align: top;
 }
 .containerThree section:nth-of-type(4n) {
   margin-right: 0;
 }
-
+h5{
+  padding: .25rem .5rem;
+  margin: .25rem;
+  margin-left: 8rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+h5 + .price {
+  margin-top: 2rem;
+}
+.price {
+  display: block;
+  margin-top: 4rem;
+}
+.dishName {
+  display: block;
+  margin-bottom: 1rem;
+}
+.button{
+  padding: .5rem;
+  border-radius: 5px;
+}
 .indicatorList {
   margin: 0;
 }
