@@ -315,6 +315,12 @@ h5 + .price {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+section.firstSpesh{
+  background: url("../img4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /******************************************
 /* RESPONSIVENESS
