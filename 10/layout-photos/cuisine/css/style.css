@@ -20,7 +20,9 @@ clear: both;
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html {
+  font-size: 100%;
+}
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   max-width: 1050px;
@@ -29,6 +31,7 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 li{
   display: inline-block;
@@ -71,7 +74,9 @@ h5{
 span {
   color: white;
 }
-
+.star {
+  color: #ff8800
+}
 
 /******************************************
 /* LAYOUT
@@ -84,6 +89,7 @@ span {
   background: url(../first_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 500px;
 }
 header {
   width: 100%;
@@ -144,6 +150,7 @@ form + section a {
   background: url(../secondbg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 500px;
 }
 .containerTwo > section {
   padding: 2rem 15% 5rem 40%
@@ -182,7 +189,7 @@ form + section a {
 .menuEx {
   background: rgba(100,100,100,.25);
   display: inline-block;
-  width: 20%;
+  width: 12rem;
   aspect-ratio: .75;
   margin-bottom: 2%;
   margin-right: 2%;
@@ -330,56 +337,126 @@ h5 + .price {
   background: url("../img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 300ms;
+  transition-duration: 150ms;
 }
-.firstSpesh *{
-  transition-duration: 300ms;
+.firstSpesh *,
+.secondSpesh *,
+.thirdSpesh *,
+.fourthSpesh *,
+.fifthSpesh *,
+.sixthSpesh *,
+.seventhSpesh *,
+.eighthSpesh * {
+  transition-duration: 150ms;
   opacity: 0;
 }
 .firstSpesh:hover {
-  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.55)), url("../img4.jpg");
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 300ms;
+  transition-duration: 150ms;
 }
-.firstSpesh:hover *{
-  transition-duration: 300ms;
+.firstSpesh:hover *,
+.secondSpesh:hover *,
+.thirdSpesh:hover *,
+.fourthSpesh:hover *,
+.fifthSpesh:hover *,
+.sixthSpesh:hover *,
+.seventhSpesh:hover *,
+.eighthSpesh:hover * {
+  transition-duration: 150ms;
   opacity: 1;
 }
+
 .secondSpesh{
   background: url("../img5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.secondSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .thirdSpesh{
   background: url("../img6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.thirdSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .fourthSpesh{
   background: url("../img7.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.fourthSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .fifthSpesh{
   background: url("../img8.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.fifthSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img8.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .sixthSpesh{
   background: url("../img9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.sixthSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .seventhSpesh{
   background: url("../img10.png");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
 }
+.seventhSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
+}
+
 .eighthSpesh{
   background: url("../img2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 150ms;
+}
+.eighthSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 150ms;
 }
 
 
