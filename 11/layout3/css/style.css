@@ -20,11 +20,15 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+*{
+  border: 1px solid gray;
+}
 body {
 
 }
-
+ul{
+  list-style: none;
+}
 
 /******************************************
 /* LAYOUT
@@ -68,11 +72,17 @@ nav, ul, main{
 ul{
   flex-basis: 60%;
 }
+main{
+  flex-wrap: wrap;
+}
 h2 {
-  flex-basis: 50%;
+  flex-basis: 45%;
+}
+h2 + h2{
+  text-align: right;
 }
 main section{
-  flex-basis: 48%;
+  flex-basis: 45%;
 }
 main section + section{
   display: flex;
@@ -81,6 +91,14 @@ main section + section{
 }
 .container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container > h2{
+  flex-basis: 95%;
+}
+.container section {
+  flex-basis: 30%;
 }
 /******************************************
 /* ADDITIONAL STYLES
