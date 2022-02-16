@@ -1,0 +1,74 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main section, .bottom section{
+  width: 33.3333%;
+  height: 300px;
+  border: 1px solid black;
+  float: left;
+}
+.bottom section{
+  width: 50%;
+}
+main,.bottom {
+  border:1px solid red;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* On mobile, please make all sections stack  */
+@media all and (max-width: 600px) {
+  main section, .bottom section {
+    width: 100%;
+  }
+}
+
+
+/* On tablet, please make the sections in main stack  */
+/* @media (min-width: 600px) and (max-width: 900px) { */
+@media all and (max-width: 900px){
+  main section {
+    width: 100%;
+  }
+}
+
+/* On laptop, please keep the normal layout, but everything should be light green */
+@media all and (min-width: 900px) {
+  main,.bottom {
+    background: lightgreen;
+  }
+}
+
+/* On larger screens, please keep the normal layout, but everything should be light blue */
+@media all and (min-width: 1400px) {
+  main,.bottom  {
+    background: lightblue;
+  }
+}

@@ -23,6 +23,9 @@ clear: both;
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  max-width: 1050px;
+  margin: 0 auto;
+  background:rgba(216, 226, 230,1)
 }
 ul {
   list-style: none;
@@ -176,7 +179,7 @@ form + section a {
   color: #ff8800;
   border-bottom: 1px solid #ff8800;
 }
-.containerThree section {
+.menuEx {
   background: rgba(100,100,100,.25);
   display: inline-block;
   width: 20%;
@@ -184,6 +187,7 @@ form + section a {
   margin-bottom: 2%;
   margin-right: 2%;
   vertical-align: top;
+  border-radius: .5rem;
 }
 .containerThree section:nth-of-type(4n) {
   margin-right: 0;
@@ -212,6 +216,7 @@ h5 + .price {
 }
 .indicatorList {
   margin: 0;
+  padding: 2rem;
 }
 .indicator{
   border-radius: 50%;
@@ -311,12 +316,68 @@ h5 + .price {
   margin: 0 auto;
 }
 
+#customerPhoto {
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: 1px 3px 10px 1px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-section.firstSpesh{
+.firstSpesh{
   background: url("../img4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 300ms;
+}
+.firstSpesh *{
+  transition-duration: 300ms;
+  opacity: 0;
+}
+.firstSpesh:hover {
+  background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.55)), url("../img4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 300ms;
+}
+.firstSpesh:hover *{
+  transition-duration: 300ms;
+  opacity: 1;
+}
+.secondSpesh{
+  background: url("../img5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thirdSpesh{
+  background: url("../img6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourthSpesh{
+  background: url("../img7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fifthSpesh{
+  background: url("../img8.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sixthSpesh{
+  background: url("../img9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seventhSpesh{
+  background: url("../img10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eighthSpesh{
+  background: url("../img2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
