@@ -8,11 +8,17 @@
 
 		<title>cuisine</title>
 
+		<!-- Friconix script for cutsom icons -->
+		<!-- <script defer src="https://friconix.com/cdn/friconix.js"> </script> -->
+
 		<!-- external CSS link -->
-		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+		<!-- fork awesome link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+		<!-- google fonts link -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/reset.css"> -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -21,17 +27,16 @@
 <!-- header and nav  -->
 		<div class="top-container">
 			<header>
-				<a href=""><img src="" alt="logo" width="40px" height="30px"></a>
 				<nav>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
+						<li class="mobileHide"><a href="#">Home</a></li>
+						<li class="mobileHide"><a href="#">About Us</a></li>
 						<li><a href="#">Menu</a></li>
 						<li><a href="#">Order Now</a></li>
-						<li><a href="#">Blog</a></li>
+						<li class="mobileHide"><a href="#">Blog</a></li>
 						<li><a href="#">Location</a></li>
-						<li><a href="#"><img src="" alt="cart icon" width="30px" height="30px"></a></li>
-						<li><a href="#"><img src="" alt="search icon" width="30px" height="30px"></a></li>
+						<li><a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></li>
 					</ul>
 				</nav>
 			</header>
@@ -43,15 +48,15 @@
 					<span>Location</span>
 				</form>
 				<section>
-					<a href=""><img src="" alt="facebook icon" width="30px" height="30px"></a>
-					<a href=""><img src="" alt="twitter icon" width="30px" height="30px"></a>
-					<a href=""><img src="" alt="instagram icon" width="30px" height="30px"></a>
+					<a href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
 				</section>
 			</section>
 		</div>
 
 <!-- section Two -->
-		<div class="containerTwo">
+		<div class="containerTwo mobileHide">
 			<section>
 				<h4>About us</h4>
 				<h2>Discover Our Restaurant Story</h2>
@@ -59,7 +64,7 @@
 				</p>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur recusandae repellendus eius praesentium ullam porro repellat fugit culpa voluptatibus asperiores.
 				</p>
-				<a href=""><span>Discover Menu</span><span><img src="" alt="->" width="10px" height="10px"></span></a>
+				<a href=""><span>Discover Menu</span><span class="arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
 			</section>
 		</div>
 
@@ -189,7 +194,7 @@
 		<div class="containerFour">
 			<h4><a href="">Book Table Now</a></h4>
 			<h2>Operating Hours</h2>
-			<a href=""><img src="" alt="phone icon" width="30px" height="30px"></a>
+			<h4 class="phoneIcon"><a href="">&#9743;</a></h4>
 			<h4>Call Now</h4>
 			<h3><a href="">+12345 678 910</a></h3>
 			<section class="hours">
@@ -203,9 +208,9 @@
 				</section>
 			</section>
 			<section class="gallery">
-				<span>&lt;</span>
+				<span><i class="fa fa-chevron-circle-left fa-2x faGold" aria-hidden="true"></i></span>
 				<img src="cookbook.png" alt="image or video">
-				<span>&gt;</span>
+				<span><i class="fa fa-chevron-circle-right fa-2x faGold" aria-hidden="true"></i></span>
 			</section>
 		</div>
 
