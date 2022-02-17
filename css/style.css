@@ -32,7 +32,6 @@ li {
   font-size: 1.5rem;
   text-decoration: none;
   color: inherit;
-  display: inline-block;
   padding: 0 1%;
 }
 ul {
@@ -74,21 +73,30 @@ p{
 /* LAYOUT
 /*******************************************/
 header {
-  height: 5rem;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  justify-content: column;
 }
-main {
 
+main {
+  
 }
 footer {
-
+  
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
+.hide {
+  display: none;
+  transition: all 200ms ease-in-out;
+}
+.menuExpand {
+  transition: all 200ms ease-in-out;
+}
+.rotateArrow {
+  transform: rotate(90deg);
+}
 
 /******************************************
 /* RESPONSIVENESS

@@ -364,7 +364,8 @@ h5 + .price {
   background: url("../img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 150ms;
+  transition: all 100ms ease-in-out;
+  /* transition-duration: 150ms; */
 }
 .firstSpesh *,
 .secondSpesh *,
@@ -374,14 +375,15 @@ h5 + .price {
 .sixthSpesh *,
 .seventhSpesh *,
 .eighthSpesh * {
-  transition-duration: 150ms;
+  transition: all 100ms ease-in-out;
+  /* transition-duration: 150ms; */
   opacity: 0;
 }
 .firstSpesh:hover {
   background: linear-gradient(to top, rgba(25,25,25,.3), rgba(25,25,25,.75)), url("../img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 150ms;
+  /* transition-duration: 150ms; */
 }
 .firstSpesh:hover *,
 .secondSpesh:hover *,
@@ -391,7 +393,7 @@ h5 + .price {
 .sixthSpesh:hover *,
 .seventhSpesh:hover *,
 .eighthSpesh:hover * {
-  transition-duration: 150ms;
+  /* transition-duration: 150ms; */
   opacity: 1;
 }
 
