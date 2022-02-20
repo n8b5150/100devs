@@ -73,10 +73,13 @@ p{
 /* LAYOUT
 /*******************************************/
 header {
-  display: flex;
-  justify-content: column;
 }
+nav ul{
+  display: flex;
 
+}
+nav ul li{
+}
 main {
   
 }
@@ -87,9 +90,13 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-.hide {
+.menuLinkList.hide {
   display: none;
   transition: all 200ms ease-in-out;
+}
+.menuLinkList {
+  display: flex;
+  flex-direction: column;
 }
 .menuExpand {
   transition: all 200ms ease-in-out;

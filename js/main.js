@@ -1,5 +1,5 @@
 const menuArrow = document.querySelectorAll('.menuExpand')
-const menuItems = document.querySelectorAll('.menuLinkList')
+// const menuItems = document.querySelectorAll('.menuLinkList')
 
 Array.from(menuArrow).forEach(element => element.addEventListener('click', expandMenu))
 
@@ -7,7 +7,7 @@ Array.from(menuArrow).forEach(element => element.addEventListener('click', expan
 
 function expandMenu(click) {
     click.target.classList.toggle('rotateArrow')
-    
+    click.target.nextElementSibling.classList.toggle('hide')
 }
 
 // document.addEventListener("click", e => {
