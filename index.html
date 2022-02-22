@@ -238,7 +238,44 @@
 
 		</article>
 		
+		<a class="tiptext">A link
+			<iframe class="description" src="http://www.example.com"></iframe>
+		</a>
 
+<!--  https://stackoverflow.com/questions/23251569/preview-page-on-link-hover
+You can use an iframe tag to display another page.
+
+<iframe src="http://www.example.com"></iframe>
+
+Your HTML
+
+ <a class="tiptext">A link
+ <iframe class="description" src="http://www.example.com"></iframe>
+ </a>
+
+Your CSS
+
+.tiptext {
+    color:#069; 
+    cursor:pointer;
+}
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:400px;
+    height:400px;
+}
+
+Your JS
+
+$(".tiptext").mouseover(function() {
+    $(this).children(".description").show();
+}).mouseout(function() {
+    $(this).children(".description").hide();
+});
+
+-->
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

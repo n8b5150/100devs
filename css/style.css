@@ -105,6 +105,19 @@ footer {
   transform: rotate(90deg);
 }
 
+/* test hover preview found at https://stackoverflow.com/questions/23251569/preview-page-on-link-hover */
+.tiptext {
+  color:#069; 
+  cursor:pointer;
+}
+.description {
+  display:none;
+  position:absolute;
+  border:1px solid #000;
+  width:400px;
+  height:400px;
+}
+
 /******************************************
 /* RESPONSIVENESS
 /*******************************************/

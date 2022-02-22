@@ -10,6 +10,18 @@ function expandMenu(click) {
     click.target.nextElementSibling.classList.toggle('hide')
 }
 
+// hover preview test
+document.querySelector(".tiptext").addEventListener('mouseover',previewIn)
+document.querySelector(".tiptext").addEventListener('mouseout',previewOut)
+
+function previewIn() {
+    document.querySelector(".description").style.display = 'block'
+}
+function previewOut() {
+    document.querySelector(".description").style.display = 'none'
+}
+
+
 // document.addEventListener("click", e => {
 //     const isDropdownButton = e.target.matches("[data-dropdown-button]")
 //     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
