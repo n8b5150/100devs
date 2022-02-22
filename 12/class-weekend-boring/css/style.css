@@ -13,13 +13,28 @@
 
 html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+  background: #222;
 }
 h1, h2, form{
   text-align: center;
 }
+input{
+  color: gray;
+  background: #222;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 0 5px;
+}
 button{
   display: block;
   margin: 20px auto;
+  background: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: gray
 }
 ul{
   width: 100px;
@@ -37,7 +52,7 @@ li{
 }
 h2{
   font-size: 100px;
-  color: red;
+  color: darkred;
   font-weight: bold;
 }
 /******************************************
