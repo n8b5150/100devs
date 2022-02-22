@@ -1,32 +1,10 @@
-document.querySelector('#yell').addEventListener('click', run)
+document.querySelector('#yell').addEventListener('click',yell)
 
-function run() {
-  const fName = document.querySelector('#firstName').value
-  const fMidName = document.querySelector('#firstMiddle').value
-  const lMidName = document.querySelector('#lastMiddle').value
-  const lName = document.querySelector('#lastName').value
+function yell(){
+    const firstName = document.querySelector('#firstName').value.toUpperCase()
+    const firstMiddle = document.querySelector('#firstMiddle').value.toUpperCase()
+    const lastMiddle = document.querySelector('#lastMiddle').value.toUpperCase()
+    const lastName = document.querySelector('#lastName').value.toUpperCase()
 
-  document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
-
-  //Add what you should be doing - conditionals go here
-
-  // document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
+    document.querySelector('#placeToYell').innerText = `${firstName} ${firstMiddle} ${lastMiddle} ${lastName} You Done Messed UP!`
 }
-
-// const synth = window.speechSynthesis;
-// document.querySelector('#yell').addEventListener('click', run)
-//
-// function run() {
-//   const fName = document.querySelector('#firstName').value
-//   const fMidName = document.querySelector('#firstMiddle').value
-//   const lMidName = document.querySelector('#lastMiddle').value
-//   const lName = document.querySelector('#lastName').value
-//
-//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
-//
-//   document.querySelector('#placeToYell').innerText = yellText
-//
-//   let yellThis = new SpeechSynthesisUtterance(yellText);
-//
-//   synth.speak(yellThis);
-// }

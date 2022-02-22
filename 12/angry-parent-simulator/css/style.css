@@ -10,12 +10,38 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-h1, h2, form{
+html,input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+  background: #222;
+}
+h1,h2{
   text-align: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 
 }
 button{
   display: block;
   margin: 20px auto;
+  color:gray;
+  background: black;
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 ul{
   width: 100px;
