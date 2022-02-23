@@ -1,0 +1,6 @@
+Homework (Due Tuesday - Mar. 1st):
+Do: NETWORK!
+Read: https://javascript.info/function-expressions + Tasks
+Read: https://javascript.info/arrow-functions-basics + Tasks
+Read:https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md
+Do: Delete the JS and do it again for all assignments
