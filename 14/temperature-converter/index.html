@@ -12,8 +12,21 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		
-
+		<h1>Temperature Conversion</h1>
+		<form action="">
+			<div>
+				<label for="temperature">Temperature: </label><input type="number" name="temperature" id="temperature">
+			</div>
+			<div>
+				<input type="radio" name="tempUnit" id="celsRadio" value="cels"><label for="celsRadio">Celsius to Fahrenheit</label>
+			</div>
+			<div>
+				<input type="radio" name="tempUnit" id="fahrRadio" value="fahr"><label for="fahrRadio">Fahrenheit to Celsius</label>
+			</div>
+		</form>
+		<span id="convert">Convert!</span>
+		<h2>Your temp is:</h2>
+		<h2 id="answer"></h2>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
