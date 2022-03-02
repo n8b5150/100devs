@@ -1,0 +1,69 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html,input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+  background: #222;
+}
+h1,h2{
+  text-align: center;
+}
+body{
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+/* form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+} */
+input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+span{
+  display: block;
+  margin: 20px auto;
+  color:gray;
+  background: black;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 7rem;
+}
+ul{
+  width: 100px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  text-align: center;
+  width: 94px;
+  height: 49px;
+  border: 1px solid black;
+}
+h2{
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
