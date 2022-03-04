@@ -6,19 +6,19 @@
 //If under 30, tell them they can not rent fancy cars affordably
 //If under over 30, tell them there is nothing left to look forward too
 function ageChecker(age){
-    if (age<16) {console.log("cannot drive")}
-    else if(age<18){console.log("can't hate from outside the club, because they can't even get in")}
-    else if(age<21){console.log("can not drink")}
-    else if(age<25){console.log("can not rent cars affordably")}
-    else if(age<30){console.log("can not rent fancy cars affordably")}
-    else console.log("there is nothing left to look forward too")
+    if (age<16) {return "cannot drive"}
+    else if(age<18){return "can't hate from outside the club, because they can't even get in"}
+    else if(age<21){return "can not drink"}
+    else if(age<25){return "can not rent cars affordably"}
+    else if(age<30){return "can not rent fancy cars affordably"}
+    else return "there is nothing left to look forward too"
 }
-ageChecker(15)
-ageChecker(17)
-ageChecker(19)
-ageChecker(22)
-ageChecker(26)
-ageChecker(31)
+console.log(ageChecker(15))
+console.log(ageChecker(17))
+console.log(ageChecker(19))
+console.log(ageChecker(22))
+console.log(ageChecker(26))
+console.log(ageChecker(31))
 
 
 
@@ -29,6 +29,6 @@ ageChecker(31)
 document.querySelector('h1').addEventListener('click',putInto)
 function putInto(){
     let age = Number(document.querySelector('input').value)
-    document.querySelector('p').innerText = ageChecker(age) //undefined in p?
+    document.querySelector('p').innerText = ageChecker(age)
 }
 
