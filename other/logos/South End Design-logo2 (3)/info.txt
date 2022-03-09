@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Kankin
+font link: https://www.fontfabric.com/kankin-free-font/
+font author: Font Fabric
+font author site: http://www.fontfabric.com/
+Slogan Font: LindenHill-webfont.ttf
+
+icon designer: Ben Rellick
+icon designer link: /benrellick
+        
+{"bg":"#F47973","icon":"#10143A","font":"#10143A","slogan":"#24284e"}
+      

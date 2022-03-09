@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Barlow-Regular
+font link: https://fonts.google.com/specimen/Barlow
+font author: Jeremy Tribby
+font author site: https://tribby.com/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Ben Rellick
+icon designer link: /benrellick
+        
+{"bg":"#F47973","icon":"#10143A","font":"#10143A","slogan":"#24284e"}
+      

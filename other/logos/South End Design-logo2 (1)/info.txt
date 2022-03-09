@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: steelfish rg
+font link: https://www.fontspring.com/fonts/typodermic/steelfish/steelfish-regular
+font author: Typodermic Fonts
+font author site: http://typodermicfonts.com/
+Slogan Font: Neuton-Extralight.ttf
+
+icon designer: Ben Rellick
+icon designer link: /benrellick
+        
+{"bg":"#F5E9EB","icon-gradient-0":"#70243D","icon-gradient-1":"#C15767","font":"#36131B","slogan":"#4a272f"}
+      
