@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Cabin-Regular
+font link: https://fonts.google.com/specimen/Cabin
+font author: Impallari Type
+font author site: www.impallari.com
+Slogan Font: SpaceMono-Regular.ttf
+
+icon designer: Travis Avery
+icon designer link: /travisavery
+        
+{"bg":"#3E3734","icon":"#C67D4E","font":"#ffffff","slogan":"#ffffff"}
+      
