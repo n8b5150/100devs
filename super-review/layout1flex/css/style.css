@@ -29,31 +29,30 @@ header,section,footer{
   height: 100px;
 }
 main{
+  display: flex;
   background: lightgray;
 }
 article{
+  display: flex;
   background: darkgray;
 }
-main > section{
-  float: left;
-  width: 33.33%;
+section{
   transition: all ease-in-out 1000ms;
+  flex: 1;
 }
 article > section{
-  float: left;
-  width: 50%;
   height: 200px;
-  transition: all ease-in-out 1000ms;
 }
 
 @media all and (max-width: 900px) {
-  main > section, article > section{
-    width: 100%;
+  section{
+    background: gray;
     transition: all ease-in-out 1000ms;
-    background: blue;
+  }
+  main,article{
+    display: block;
   }
 }
-
 /******************************************
 /* LAYOUT
 /*******************************************/
