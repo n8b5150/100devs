@@ -12,7 +12,7 @@ We’ll always do our best to fulfil your needs and meet your expectations, but 
 
 You **customer name,** located at **customer address** (“You”) are hiring us South End Web Design (“We or Us”) to:
 
-- **Design and develop a web site**
+Design and develop a responsive web site using content provided by **You**.
 
 For the estimated total price of **total** as outlined in our previous correspondence.
 
@@ -28,9 +28,9 @@ South End Web Design: We have the experience and ability to do everything we’v
 
 ### Design
 
-We create look-and-feel designs, and flexible layouts that adapt to the capabilities of many devices and screen sizes. We create designs iteratively and use predominantly HTML and CSS so we won’t waste time mocking up every template as a static visual. We may use visuals to indicate a creative direction (colour, texture and typography.) We call that ‘atmosphere.’
+We create look-and-feel designs, and flexible layouts that adapt to the capabilities of many devices and screen sizes. We create designs iteratively and use predominantly HTML and CSS.
 
-You’ll have plenty of opportunities to review our work and provide feedback. We’ll either share a Dropbox, Google Drive folder or Github repository or development site with you and we’ll have regular, possibly daily contact.
+You will have opportunities to review our work and provide feedback on a regular basis. We’ll share Google Drive folder and/or Github repository or development site with you.
 
 If, at any stage, you change your mind about what you want to be delivered and are not happy with the direction our work is taking you’ll pay us in full for the time we’ve spent working with you until that point and terminate this contract.
 
@@ -44,7 +44,7 @@ You should supply graphic files in an editable, vector digital format. You shoul
 
 ### HTML, CSS and JavaScript
 
-We deliver web page types developed from HTML markup, CSS stylesheets for styling and unobtrusive JavaScript for feature detection, poly-fills and behaviours.
+We deliver web page types developed from HTML markup, CSS stylesheets for styling and unobtrusive JavaScript for feature detection, poly-fills, and behaviours.
 
 ### Browser testing
 
@@ -54,7 +54,7 @@ We test our work in current versions of major desktop browsers including those m
 
 ### Mobile browser testing
 
-Mobile browser testing Testing using popular smaller screen devices is essential in ensuring that a person’s experience of a design is appropriate to the capabilities of the device they’re using. We test our designs in:
+Testing using popular smaller screen devices is essential in ensuring that a person’s experience of a design is appropriate to the capabilities of the device they’re using. We test our designs in:
 
 iOS 9: Safari, Google Chrome
 Android: Google Chrome on Android Emulator
@@ -63,7 +63,7 @@ We won’t test in Blackberry, Opera Mini/Mobile, specific Android devices, Wind
 
 ### Technical support
 
-We’re not a website hosting company so we don’t offer support for website hosting, email or other services relating to hosting. You may already have professional hosting and you might even manage that hosting in-house; if you do, great. If you don’t, we can set up an account for you at one of our preferred hosting providers. We can set up your site on a server, plus any statistics software such as Google Analytics and we can provide a separate estimate for that. Then, the updates to, and management of that server will be up to you.
+We’re not a website hosting company so we don’t offer support for website hosting, email, or other services relating to hosting. You may already have professional hosting and you might even manage that hosting in-house. If you do, great. If you don’t, we can set up an account for you at one of our preferred hosting providers. We can set up your site on a server, plus any statistics software such as Google Analytics and we can provide a separate estimate for that. Then, the updates to, and management of that server will be up to you.
 
 ### Search engine optimisation (SEO)
 
@@ -87,8 +87,6 @@ Finally, if any provision of this contract shall be unlawful, void, or for any r
 
 Just to be clear, “Intellectual property rights” means all patents, rights to inventions, copyright (including rights in software) and related rights, trademarks, service marks, get up and trade names, internet domain names, rights to goodwill or to sue for passing off, rights in designs, database rights, rights in confidential information (including know-how) and any other intellectual property rights, in each case whether registered or unregistered and including all applications (or rights to apply) for, and renewals or extensions of, such rights and all similar or equivalent rights or forms of protection which subsist or shall subsist now or in the future in any part of the world.
 
-Blimey.
-
 First, you guarantee that all elements of text, images or other artwork you provide are either owned by your good selves, or that you’ve permission to use them. When you provide text, images or other artwork to us, you agree to protect us from any claim by a third party that we’re using their intellectual property.
 
 We guarantee that all elements of the work we deliver to you are either owned by us or we’ve obtained permission to provide them to you. When we provide text, images or other artwork to you, we agree to protect you from any claim by a third party that you’re using their intellectual property. Provided you’ve paid for the work and that this contract hasn’t been terminated, we’ll assign all intellectual property rights to you as follows:
@@ -109,7 +107,7 @@ We’re sure you understand how important it is as a small business that you pay
 
 **Payment schedule**
 
-We issue invoices electronically. Our payment terms are 30 days from the date of invoice by **paypal, square, etc** payments system. All proposals are quoted in **USD** and payments will be made at the equivalent conversion rate at the date the transfer is made.
+We issue invoices electronically. Our payment terms are 30 days from the date of invoice by **paypal, square, etc** payments system. All proposals are quoted in US Dollars and payments will be made at the equivalent conversion rate at the date the transfer is made.
 
 You agree to pay all charges associated with international transfers of funds. The appropriate bank account details will be printed on our electronic invoice. We reserve the right to charge interest on all overdue debts at the rate of 10% per month or part of a month.
 
