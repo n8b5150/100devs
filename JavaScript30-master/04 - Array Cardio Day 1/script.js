@@ -53,16 +53,26 @@ console.log(inventors.sort( (a,b) => (a.passed - a.year) - (b.passed - b.year)))
             'Boulevard Auguste-Blanqui','Boulevard Barbès','Boulevard Beaumarchais',"Boulevard de l'Amiral-Bruix",'Boulevard Mortier','Boulevard Poniatowski','Boulevard Soult','Boulevard des Capucines','Boulevard de la Chapelle','Boulevard de Clichy','Boulevard du Crime',"Boulevard du Général-d'Armée-Jean-Simon",'Boulevard Haussmann',"Boulevard de l'Hôpital",'Boulevard des Italiens','Boulevard Lefebvre','Boulevard de la Madeleine','Boulevard de Magenta','Boulevard Malesherbes','Boulevard Marguerite-de-Rochechouart','Boulevard Montmartre','Boulevard du Montparnasse','Boulevard Raspail','Boulevard Richard-Lenoir','Boulevard Saint-Germain','Boulevard Saint-Michel','Boulevard de Sébastopol','Boulevard de Strasbourg','Boulevard du Temple','Boulevard Voltaire','Boulevard de la Zone'
         ]
 
-console.log(boulevardsParis.filter())
+console.log(boulevardsParis.filter( (e) => e.toLowerCase().indexOf('de') !== -1))
   
       // 7. sort Exercise
       // Sort the people alphabetically by last name
-console.log(people.sort()) //
+console.log(people.sort())
 
   
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+console.log(data.reduce( (prev, curr) => {
+      if (curr in prev) {
+            prev[curr]++
+      } else {
+            prev[curr] = 1
+      }
+      return prev
+}, {}))
+
 
     //From MDN:  
     //   let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
