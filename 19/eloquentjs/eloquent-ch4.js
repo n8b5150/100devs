@@ -48,12 +48,21 @@ console.log(sum(range(1, 10)));
 // Thinking back to the notes about side effects and pure functions in the previous chapter, which variant do you expect to be useful in more situations? Which one runs faster?
 
 // Your code here.
-
-//console.log(reverseArray(["A", "B", "C"]));
+const reverseArray = (arr) => {
+    let newArr = []
+    arr.forEach((e) => newArr.unshift(e))
+    return newArr
+}
+console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
-//let arrayValue = [1, 2, 3, 4, 5];
-//reverseArrayInPlace(arrayValue);
-//console.log(arrayValue);
+
+const reverseArrayInPlace = (arr) => {
+        //this is where I left off
+    })
+}
+// let arrayValue = [1, 2, 3, 4, 5];
+// reverseArrayInPlace(arrayValue);
+// console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 
 
