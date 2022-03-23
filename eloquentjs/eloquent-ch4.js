@@ -109,7 +109,12 @@ console.log(arrayToList([10, 20]))
 const listToArray = (list) => {
     let arr = []
     for (let i = list; i; i = i.rest){
+        //i = {value: 10, rest: {value: 20, rest: null}}
+        //i = i.rest = {value: 20, rest: null}
+        //i = i.rest = null = loop ends
         arr.push(i.value)
+        //arr = [10]
+        //arr = [10,20]
     }
     return arr
 }
@@ -133,8 +138,10 @@ console.log(prepend(10, prepend(20, null)));
 const nth = (list, n) => {
     if (!list) {
         return undefined
+        // list is empty, undefined
     } else if ( n == 0) {
         return list.value
+        // return the first value in the list
     } else return nth(list.rest, n-1)
 }
 console.log(arrayToList([10, 20, 30, 40, 50]))
@@ -143,6 +150,11 @@ console.log(nth(arrayToList([10, 20, 30, 40, 50]), 3))
 console.log(arrayToList([10, 20, 30]))
 console.log(nth(arrayToList([10, 20, 30, 40, 50]), 1));
 // → 20
+console.log(arrayToList([10, 20, 30]))
+console.log(nth(arrayToList([10, 20, 30, 40, 50]), 0));
+// 10
+console.log(nth())
+// undef
 
 
 
@@ -159,6 +171,7 @@ const deepEqual = (a, b) => {
     //if values are null or are not an object, return false
     if (a == null || typeof a != "object" ||
         b == null || typeof b != "object") return false;
+
     //assign Object.key values to variables
     let keysA = Object.keys(a), keysB = Object.keys(b);
     //compare lengths of keys
@@ -169,6 +182,7 @@ const deepEqual = (a, b) => {
     for (let key of keysA) {
       if (!keysB.includes(key) || !deepEqual(a[key], b[key])) return false;
     }
+    
     //if keysA is in keysB, true 
     return true;
 }

@@ -38,27 +38,81 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
 
+    const bornIn = (arr, yearOne, yearTwo) => {
+      return arr.filter( e => {
+        if (e.year >= yearOne && e.year <= yearTwo) {
+          return e
+        }
+      })
+    }
+    console.table(bornIn(inventors, 1500, 1600))
+
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
 
+    const firstLast = (arr) => {
+      return arr.map( e => [e.first, e.last])
+    }
+    console.table(firstLast(inventors))
+
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    let inventorsByAge = inventors.map(e => e)
+    inventorsByAge.forEach(e => e.age = e.passed - e.year)
+    console.table(inventorsByAge)
+
+    const sortInventors = (arr) => {
+      return arr.sort( (a,b) => (a.year) - (b.year))
+    }
+    console.table(sortInventors(inventors))
+
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
+    const reduceInventors = (arr) => {
+      return arr.reduce( (prev, curr) => prev + curr.age, 0) 
+                                  //0 is the initial value
+    }
+    console.log(reduceInventors(inventorsByAge))
+
     // 5. Sort the inventors by years lived
+
+    const sortInventorsAge = (arr) => {
+      return arr.sort( (a,b) => (a.age) - (b.age))
+    }
+    console.table(sortInventorsAge(inventorsByAge))
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
 
+    
+
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const sortLastName = (arr) => {
+      return arr.sort()
+    }
+    console.table(sortLastName(people))
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    const sumInstance = (arr) => {
+      return arr.reduce( (allItems,item) => {
+        if ( item in allItems ) {
+          allItems[item]++
+        } else {
+          allItems[item] = 1
+        }
+        return allItems
+      }, {})
+          //what are these extra curly braces for? ,{})
+          //empty object is set as the initial value
+    }
+    console.table(sumInstance(data))
 
   </script>
 </body>
