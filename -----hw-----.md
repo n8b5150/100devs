@@ -94,3 +94,15 @@ Do: https://javascript30.com/ Day 04 Array Cardio (PLEASE DO IT AGAIN)
 Read: https://javascript.info/object
 Do: All the tasks 👆🏾
 Do: Minimum of 1 https://codewars.com/ 8 Kyu Fundamentals Track EVERY DAY - 20 mins then look at solution!
+
+Homework (Due Thursday - Mar. 31st):
+Watch / Do: https://youtu.be/PFmuCDHHpwk
+Watch: https://youtu.be/0fKg7e37bQE​
+🚨 Do: https://aka.ms/learnwithleon (Intro. To Github)
+:this: This link is a great intro to github & part of our sponsored class on Thursday. Also, please use this link, so Microsoft can see how many folx are participating. If you fill out the email submission, you will be entered into an extra raffle for a surface go laptop! 
+
+
+Want to push?:
+Read and do the tasks: https://javascript.info/ Whole Chapter - Objects: the basics 
+Read: Pillars of OOP - https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219
+Complete and Submit this project: https://github.com/leonnoel/100devs-calculator
