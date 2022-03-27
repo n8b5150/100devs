@@ -3,7 +3,7 @@
 //Create and array of numbers. Sum all of the numbers. Alert the sum.
 let arrNums = []
 function createArrNumsAndSum(length) {
-    let sum = 0
+    //let sum = 0
     for(let i = 0; i < length; i++) {
         arrNums.push(Number((100 * Math.random()).toFixed(0)))
     }
@@ -17,7 +17,9 @@ console.log(createArrNumsAndSum(10))
 //Return a new array of numbers that is every original number squared
 
 function sqArr(arr) {
-    return arr.map(e => e*e)
+    let newArr = arr.map(e => e*e)
+    console.log(newArr)
+    return arr.map(e => e*e) //Math.sqr()
 }
 
 console.table(sqArr(arrNums))
