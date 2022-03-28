@@ -1,5 +1,5 @@
 function howMuchILoveYou(nbPetals) {
-    for ( nbPetals ; nbPetals > 0; nbPetals-=6 ){
+    for ( nbPetals ; nbPetals > 6; nbPetals-=6 ){
       nbPetals = nbPetals
       console.log(nbPetals)
     }
@@ -30,3 +30,18 @@ console.log(howMuchILoveYou(8))
 console.log(howMuchILoveYou(15))
 console.log(howMuchILoveYou(3))
 console.log(howMuchILoveYou(6))
+
+//codewars top answer
+
+// const phrases = [
+//   'I love you',
+//   'a little',
+//   'a lot',
+//   'passionately',
+//   'madly',
+//   'not at all',
+// ]
+
+// function howMuchILoveYou(n) {
+//    return phrases[(n - 1) % phrases.length]  //remainder of n-1/number of phrases
+// }
