@@ -106,3 +106,5 @@ Want to push?:
 Read and do the tasks: https://javascript.info/ Whole Chapter - Objects: the basics 
 Read: Pillars of OOP - https://medium.com/@hamzzza.ahmed95/four-pillars-of-object-oriented-programming-oop-e8d7822aa219
 Complete and Submit this project: https://github.com/leonnoel/100devs-calculator
+
+https://www.firststepcoding.com/book-chapter-4.html
