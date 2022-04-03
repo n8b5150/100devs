@@ -14,3 +14,13 @@
 
 // Input: ["sheep", "sheep", "wolf"]
 // Output: "Pls go away and stop eating my sheep"
+
+function wolfSheep(arr) {
+    let wolfInd = arr.reverse().findIndex(e => e =='wolf')
+    return wolfInd == 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${wolfInd}! You are about to be eaten by a wolf!`
+}
+
+console.log(wolfSheep(["sheep", "sheep", "sheep", "wolf", "sheep"])) //1
+console.log(wolfSheep(["sheep", "sheep", "wolf", "sheep", "sheep"])) //2
+console.log(wolfSheep(["sheep", "sheep", "wolf"]))
+console.log(wolfSheep(["sheep", "sheep", "wolf", "sheep", "sheep", "sheep", "sheep"])) //4
