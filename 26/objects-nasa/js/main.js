@@ -3,7 +3,7 @@
 
 document.querySelector('button').addEventListener('click', getFetch)
 
-const name = document.getElementById('name')
+const title = document.getElementById('title')
 const image = document.getElementById('image')
 const descr = document.getElementById('descr')
 const date = document.getElementById('date')
@@ -15,7 +15,9 @@ function getFetch(){
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            name.innerText = data.title
+            //Make the NASA API handle all the data types including video
+            //Move this functionality to a new function
+            title.innerText = data.title
             image.src = data.url
             descr.innerText = data.explanation
         })
@@ -23,3 +25,4 @@ function getFetch(){
             console.log(`error ${err}`)
         })
 }
+

@@ -35,3 +35,7 @@ function nextCocktail(){
     image.src = dataObj.drinks[i].strDrinkThumb
     instr.innerText = dataObj.drinks[i].strInstructions
 }
+
+//Make a rotating list of drinks (an automatic carousel)
+
+//Play with the cocktailDB api! Make it do something else! 
