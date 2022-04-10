@@ -9,11 +9,10 @@
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+  background-color: #222;
+  color:azure;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
 h1{
   font-size: 3rem;
 }
@@ -24,6 +23,34 @@ h3{
   font-size: 2rem;
 }
 
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+section{
+  width: 600px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+h1,h2,h3{
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin: 1rem;
+  text-align: center;
+}
+img{
+  flex-grow: .15;
+  margin: 1%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
