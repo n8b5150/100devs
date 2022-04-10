@@ -20,6 +20,7 @@ function randRPSLS(){
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, scissors, lizard, or spock) and determines if they won a game of rock paper scissors against a bot using the above function
 function gameRPSLS(choice){
+    let result = ""
     let botChoice = randRPSLS()
     choice = choice.toLowerCase()
     if ( choice == botChoice ){
@@ -38,8 +39,9 @@ function gameRPSLS(choice){
                 // (choice == 'lizard' && botChoice == 'spock') ||
                 // (choice == 'lizard' && botChoice == 'scissors')
                 ){
-        return `You: ${choice}, Bot: ${botChoice} -- You Win`
-    } else return `You: ${choice}, Bot: ${botChoice} -- You Lose` 
+        result = `You: ${choice}, Bot: ${botChoice} -- You Win`
+    } else result = `You: ${choice}, Bot: ${botChoice} -- You Lose` 
+    document.getElementById('result').innerText = result
 }
 
 console.log(gameRPSLS(randRPSLS()))
@@ -55,3 +57,4 @@ console.log(gameRPSLS(randRPSLS()))
 console.log(gameRPSLS(randRPSLS()))
 console.log(gameRPSLS(randRPSLS()))
 console.log(gameRPSLS(randRPSLS()))
+
