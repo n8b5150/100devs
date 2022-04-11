@@ -39,11 +39,21 @@ function getFetch(){
 //     created_at: "2021-10-23T02:24:55.243Z"
 //     },...
 function createCard(arr){
-    //arr[i].
-        //website_url (anchor card contents)
-        //name
-        //Street
-        //city, state postal code
-        //phone
-
+    const cardSection = document.getElementById('cards')
+    cardSection.innerHTML = ''
+    arr.forEach( e => {
+        let phone = ''
+        if (e.phone == null) phone = ''
+        else if (e.phone.length == 10) {
+            phone = `${e.phone.slice(0,3)}-${e.phone.slice(3,6)}-${e.phone.slice(-4)}`
+        }
+        cardSection.innerHTML += 
+            `<ul>
+                <li>${e.name}</li>
+                <li>${e.street}</li>
+                <li>${e.city}, ${e.state} ${e.postal_code.slice(0,5)}</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> ${phone}</li>
+                <li><a href="${e.website_url}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Website</a></li>
+                </ul>`
+    })
 }
