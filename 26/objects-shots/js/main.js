@@ -14,7 +14,7 @@ let dataObj = {}
 let i = 0
 
 function getFetch(){
-    i = 0
+    i = 0 //reset nextCocktail counter
     fetch(url + input.value)
         .then(res => res.json())
         .then(data => {
