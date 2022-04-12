@@ -49,11 +49,17 @@ function createCard(arr){
         }
         cardSection.innerHTML += 
             `<ul>
-                <li>${e.name}</li>
-                <li>${e.street}</li>
-                <li>${e.city}, ${e.state} ${e.postal_code.slice(0,5)}</li>
+                <li id="name">${e.name}</li>
+
+                <li>${e.street || '&nbsp;'}</li>
+
+                <li>${e.city}, ${e.state}</li>
+
                 <li><i class="fa fa-phone" aria-hidden="true"></i> ${phone}</li>
+
                 <li><a href="${e.website_url}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Website</a></li>
+
+                <li><a href="https://www.google.com/maps/search/?api=1&query=${e.name.split(' ').join('+')}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> Google Maps</a></li>
                 </ul>`
     })
 }

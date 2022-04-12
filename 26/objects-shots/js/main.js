@@ -4,8 +4,9 @@
 document.getElementById('getCocktail').addEventListener('click',getFetch)
 document.getElementById('nextCocktail').addEventListener('click',nextCocktail)
 
-const name = document.getElementById('name')
+const title = document.getElementById('title')
 const image = document.getElementById('image')
+const instrTitle = document.getElementById('instrTitle')
 const instr = document.getElementById('instr')
 const input = document.getElementById('input')
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
@@ -13,12 +14,13 @@ let dataObj = {}
 let i = 0
 
 function getFetch(){
+    i = 0
     fetch(url + input.value)
         .then(res => res.json())
         .then(data => {
             dataObj = data
             console.log(data)
-            name.innerText = data.drinks[0].strDrink
+            title.innerText = data.drinks[0].strDrink
             image.src = data.drinks[0].strDrinkThumb
             instr.innerText = data.drinks[0].strInstructions
         })
@@ -31,8 +33,9 @@ function nextCocktail(){
     //loop through array indexes, waiting for a click between each
     if ( i == dataObj.drinks.length - 1 ) i = 0
     i++
-    name.innerText = dataObj.drinks[i].strDrink
+    title.innerText = dataObj.drinks[i].strDrink
     image.src = dataObj.drinks[i].strDrinkThumb
+    instrTitle.innerText = 'Instructions'
     instr.innerText = dataObj.drinks[i].strInstructions
 }
 

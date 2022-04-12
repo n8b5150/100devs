@@ -3,26 +3,45 @@
 
 document.querySelector('button').addEventListener('click', getFetch)
 
+const container = document.getElementById('container')
 const title = document.getElementById('title')
 const image = document.getElementById('image')
+const video = document.getElementById('video')
 const descr = document.getElementById('descr')
 const date = document.getElementById('date')
 
-const url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
+const url = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`
 
 function getFetch(){
     fetch(url + '&date=' + date.value)
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            //Make the NASA API handle all the data types including video
-            //Move this functionality to a new function
-            title.innerText = data.title
-            image.src = data.url
-            descr.innerText = data.explanation
+            data.media_type == 'image' ? displayImage(data) :
+            data.media_type == 'video' ? displayVideo(data) : otherType(data)
         })
         .catch(err => {
             console.log(`error ${err}`)
         })
 }
 
+function displayImage(arr){
+    video.style.display = 'none'
+    image.style.display = 'inline-block'
+    title.innerText = arr.title
+    image.src = arr.url
+    descr.innerText = arr.explanation
+}
+function displayVideo(arr){
+    image.style.display = 'none'
+    video.style.display = 'inline-block'
+    title.innerText = arr.title
+    video.src = arr.url
+    descr.innerText = arr.explanation
+}
+function otherType(arr){
+    video.style.display = 'none'
+    image.style.display = 'none'
+    title.innerText = ''
+    descr.innerText = arr.msg
+}
