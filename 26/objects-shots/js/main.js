@@ -39,6 +39,10 @@ function nextCocktail(){
     instr.innerText = dataObj.drinks[i].strInstructions
 }
 
+function carousel(){
+    nextCocktail()
+    setInterval( () => nextCocktail(), 2000)
+}
 //Make a rotating list of drinks (an automatic carousel)
 
 //Play with the cocktailDB api! Make it do something else! 

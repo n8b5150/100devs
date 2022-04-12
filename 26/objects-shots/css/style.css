@@ -49,7 +49,7 @@ h1,h2{
 section h3{
   font-size: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: justify;
+  text-align: left;
   padding: .5rem;
 }
 
