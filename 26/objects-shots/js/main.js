@@ -15,7 +15,7 @@ let i = 0
 
 function getFetch(){
     i = 0 //reset nextCocktail counter
-    fetch(url + input.value)
+    fetch(url + input.value.toLowerCase().replace(/^[ ]$/g,'%20'))
         .then(res => res.json())
         .then(data => {
             dataObj = data
