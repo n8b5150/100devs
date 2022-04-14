@@ -38,7 +38,11 @@ button{
   /* border-bottom-left-radius: 0;
   border-top-left-radius: 0; */
 }
-button + button{
+#nextCocktail{
+  margin-left: 0;
+  border-radius: 0;
+}
+#carousel{
   margin-left: 0;
   border-bottom-right-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -63,7 +67,7 @@ body{
 }
 section{
   padding: 1rem;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
 }
 h2{

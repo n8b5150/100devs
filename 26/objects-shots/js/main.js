@@ -3,6 +3,7 @@
 
 document.getElementById('getCocktail').addEventListener('click',getFetch)
 document.getElementById('nextCocktail').addEventListener('click',nextCocktail)
+document.getElementById('carousel').addEventListener('click',carousel)
 
 const title = document.getElementById('title')
 const image = document.getElementById('image')
