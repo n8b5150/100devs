@@ -22,7 +22,7 @@ Participate in various committees
 Participate in special projects as assigned
 
 2019 - present			
-Darroch Medical
+Darroch Medical Solutions
 Technology Consultant
 Setup and configure patient monitoring test environments
 Assist with development of measurement and reporting methods and devices
