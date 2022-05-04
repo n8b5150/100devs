@@ -86,10 +86,27 @@ class Cat extends Animal{
     }
 }
 
+class Cow extends Animal{
+    constructor(name,breed){
+        super(name)
+        this._breed = breed
+    }
+    get breed(){
+        return this._breed
+    }
+}
 
-
+const moomoo = new Cow('MooMoo', 'Holstein')
+const fridge = new Dog('Fridge', 'Labrador')
+const pablo = new Cat('Pablo', 'Tabby')
 const rufus = new Dog('Rufus', 'Pitbull')
-console.log(rufus)
+
+let arrAnimals = [fridge, pablo, rufus, moomoo]
+
+for ( a of arrAnimals ){
+    a.speak()
+}
+
 console.log(rufus.name)
 console.log(rufus.breed)
 rufus.speak()
