@@ -25,7 +25,18 @@
 // (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
 
 function maxMultiple(div,lim){
-  
+    let maxMult = 0
+    for ( let i = 1; div*i <= lim; i++){
+        maxMult = div*i
+    }
+    return maxMult  
 }
 
 console.log(maxMultiple(37,200))
+console.log(maxMultiple(2,7))
+console.log(maxMultiple(10,50))
+
+// best answer
+// function maxMultiple(divisor, bound){
+//     return bound-bound%divisor
+//   }
