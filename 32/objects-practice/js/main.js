@@ -107,3 +107,8 @@ console.log(bob.name)
 console.log(joe.tech)
 console.log(jimmy.tech)
 
+let arr = [bob,joe,jimmy]
+arr.forEach(e => {
+    e.sayHello()
+    console.log(e.name)
+})
