@@ -17,7 +17,10 @@
 //     console.log('Paper delivered to house 1')
 // }
 // function houseTwo(){
-//     setTimeout(() => console.log('Paper delivered to house 2'), 3000)
+//     setTimeout(() => console.log('Paper delivered to house 2'), 3000) 
+        // even if this is set to zero milliseconds, it gets handed off to the browser
+        // this results in houseTwo being last to respond 
+        // javascript ain't waitin' on the browser and moves on to houseThree   
 // }
 // function houseThree(){
 //     console.log('Paper delivered to house 3')
@@ -92,6 +95,7 @@
 //         }, 2000)
 //     })
 // }
+    // Promise chain
 // houseOne()
 //     .then(data => console.log(data))
 //     .then(houseTwo)
@@ -135,6 +139,7 @@
 // getPaid()
 
 //Code 08
+// HW - add try catch
 // async function getACuteDogPhoto(){
 //     const res = await fetch('https://dog.ceo/api/breeds/image/random')
 //     const data = await res.json()
