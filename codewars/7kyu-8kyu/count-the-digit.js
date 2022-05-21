@@ -31,3 +31,4 @@ function countDigit(n,d){
 }
 
 countDigit(10,0)
+countDigit(12,2)
