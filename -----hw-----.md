@@ -167,3 +167,34 @@ Do: Start prepping THE BANK
 Do: Complete Your Professional Links
 READ: Modern Javascript For Dinosaurs - https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
 WATCH: Node.js Crash Course (just get through it) - https://youtu.be/fBNz5xF-Kx4
+
+-----5/19
+⭐️ HOMEWORK SUBMISSION:
+Freelancing Submission: https://forms.gle/Ha27LvZAJsFiY2Dx7 
+Professional Links Submission: https://forms.gle/Pt7kwXndftDedcbX8
+
+🗓️ HOMEWORK DUE (Tuesday):
+Do: Start prepping THE BANK
+Do: Complete Your Professional Links (https://forms.gle/Pt7kwXndftDedcbX8
+)
+Do: Make node-backend-simple-json more readable
+Do: Make a coinflip game where the randomization happens server side
+
+
+-----5/24
+⭐️ HOMEWORK SUBMISSION:
+Freelancing Submission: https://forms.gle/Ha27LvZAJsFiY2Dx7 
+Professional Links Submission: https://forms.gle/Pt7kwXndftDedcbX8
+
+🗓️ HOMEWORK DUE (Thursday):
+Do: Start prepping THE BANK
+Do: Complete Your Professional Links (https://forms.gle/Pt7kwXndftDedcbX8
+)
+Do: Make node-backend-simple-json more readable
+Do: Make a coinflip game where the randomization happens server side
+
+
+🗓️ HOMEWORK DUE (Tuesday):
+Watch: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+Watch: https://www.youtube.com/watch?v=cCOL7MC4Pl0
+Do: https://zellwk.com/blog/crud-express-mongodb/ (SUPER IMPORTANT)
