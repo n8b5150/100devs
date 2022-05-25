@@ -1,6 +1,9 @@
 javascript is synchronous and does not wait for functions to complete
 javascript is single-threaded/blocking code
 
+higher order functions (ex. addEventListener('click',callback)) have callback functions
+callback functions fires when an async TASK or another function is done
+
 browser/web api's provide methods to make javascript wait
 
 promises are objects that may have content in the future
@@ -20,3 +23,5 @@ node gives javascript access to the internet and databases
 node modules:
     http: web access
     fs: file system
+
+
