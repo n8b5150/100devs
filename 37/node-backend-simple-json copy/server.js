@@ -7,6 +7,7 @@ const fs = require('fs')
 const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
+const path = require('path')
 
 const server = http.createServer((req, res) => {
   const page = url.parse(req.url).pathname;
@@ -34,26 +35,38 @@ const server = http.createServer((req, res) => {
     });
   }
   else if (page == '/api') {
-    if('student' in params){
-      if(params['student']== 'leon'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
+    let result = ''
+    let randomNum = Math.random()
+    let img = ''
+    randomNum > .5 ? result = "Heads" : result = "Tails"
+    randomNum > .5 ? img = "/heads.jpg" : img = "/tails.jpg"
+    res.writeHead(200, {'Content-Type': 'application/json'});
         const objToJson = {
-          name: "leon",
-          status: "Boss Man",
-          currentOccupation: "Baller"
+          number: randomNum,
+          status: result,
+          image: img
         }
         res.end(JSON.stringify(objToJson));
-      }//student = leon
-      else if(params['student'] != 'leon'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
-        const objToJson = {
-          name: "unknown",
-          status: "unknown",
-          currentOccupation: "unknown"
-        }
-        res.end(JSON.stringify(objToJson));
-      }//student != leon
-    }//student if
+    // if('student' in params){
+    //   if(params['student']== 'leon'){
+    //     res.writeHead(200, {'Content-Type': 'application/json'});
+    //     const objToJson = {
+    //       name: "leon",
+    //       status: "Boss Man",
+    //       currentOccupation: "Baller"
+    //     }
+    //     res.end(JSON.stringify(objToJson));
+    //   }//student = leon
+    //   else if(params['student'] != 'leon'){
+    //     res.writeHead(200, {'Content-Type': 'application/json'});
+    //     const objToJson = {
+    //       name: "unknown",
+    //       status: "unknown",
+    //       currentOccupation: "unknown"
+    //     }
+    //     res.end(JSON.stringify(objToJson));
+    //   }//student != leon
+    // }//student if
   }//else if
   else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
@@ -63,6 +76,18 @@ const server = http.createServer((req, res) => {
   }else if (page == '/js/main.js'){
     fs.readFile('js/main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
+      res.write(data);
+      res.end();
+    });
+  }else if (page == '/tails.jpg'){
+    fs.readFile('tails.jpg', function(err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
+      res.write(data);
+      res.end();
+    });
+  }else if (page == '/heads.jpg'){
+    fs.readFile('heads.jpg', function(err, data) {
+      res.writeHead(200, {'Content-Type': 'image/jpeg'});
       res.write(data);
       res.end();
     });
