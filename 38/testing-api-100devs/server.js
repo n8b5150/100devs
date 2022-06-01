@@ -3,6 +3,8 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
+app.use(cors())
+
 const parks = {
     'Pearson' : {
         'address' : 'https://www.google.com/maps/place/Pearson+Park/@41.6445834,-83.4457582,15z/data=!4m2!3m1!1s0x0:0xf0aca62ce98a7bea',
