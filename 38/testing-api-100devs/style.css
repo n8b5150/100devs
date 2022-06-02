@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+/* default styles */
+
+html{
+    background-color: #007078;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+h1{
+    border-radius: 10px;
+    background-color: white;
+    color: #007078;
+}
+select,option{
+    border-radius: 5px;
+    color: #49484a;
+}
+#getPark{
+    border: solid white 2px;
+    border-radius: 5px;
+}
+
+
+footer p{
+    font-size: 8px;
+}
+/* layout */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
