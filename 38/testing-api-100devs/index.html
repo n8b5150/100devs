@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Testing API 100Devs</title>
 </head>
 <body>
-    <h1>Let's make an API.</h1>
-    <form action=""><input type="text" id="parkName"><span>Get Park</span></form>
-    <h2>Park Info</h2>
-    <h2 id="selectedPark"></h2>
-    <p><a href="" id="address">Google Maps Link</a></p>
-    <script src="js/main.js"></script>
+    <header>
+        <h1>Metroparks Toledo</h1>
+        <h3>Quick Information</h3>  
+    </header>
+
+    <section>
+        <select name="park-list" id="park-select">
+            <option value="">Choose a park:</option>
+            <option value="cannonballprairie">Cannonball Prairie Metropark</option>
+            <option value="fallentimbers">Fallen Timbers Battlefield Metropark</option>
+            <option value="farnsworth">Farnsworth Metropark</option>
+            <option value="glasscity">Glass City Metropark</option>
+            <option value="howardmarsh">Howard Marsh Metropark</option>
+            <option value="middlegrounds">Middlegrounds Metropark</option>
+            <option value="oakopenings">Oak Openings Preserve Metropark</option>
+            <option value="pearson">Pearson Metropark</option>
+            <option value="providence">Providence Metropark</option>
+            <option value="secor">Secor Metropark</option>
+            <option value="sidecut">Side Cut Metropark</option>
+            <option value="swancreek">Swan Creek Preserve Metropark</option>
+            <option value="botanical">Toledo Botanical Garden</option>
+            <option value="wildwood">Wildwood Preserve Metropark</option>
+            <option value="wiregrass">Wiregrass Lake Metropark</option>
+        </select><span id="getPark">Get Park</span>
+    </section>
+    <main>
+        <h2 id="selectedPark"></h2>
+        <h4><a href="" id="website"></a></h4>
+        <h4><a href="" id="directions"></a></h4>
+        <ul id="features-list">
+        
+        </ul>
+        
+        <section id="parkImage">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a test api for learning purposes. All images belong to Metroparks Toledo.</p>
+    </footer>
+    
+    
+    <script src="main.js"></script>
 </body>
 </html>
