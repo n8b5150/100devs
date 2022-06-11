@@ -1,4 +1,4 @@
-const deletePark = document.querySelectorAll('.fa-trash')
+const deleteText = document.querySelectorAll('.fa-trash')
 const thumbText = document.querySelectorAll('.fa-thumbs-up')
 
 Array.from(deleteText).forEach((element)=>{
@@ -10,8 +10,10 @@ Array.from(thumbText).forEach((element)=>{
 })
 
 async function deletePark(){
+    //alert('delete clicked')
     const pName = this.parentNode.childNodes[1].innerText
     const pAddress = this.parentNode.childNodes[3].innerText
+    //alert(pName,pAddress)
     try{
         const response = await fetch('deletePark', {
             method: 'delete',
@@ -30,12 +32,14 @@ async function deletePark(){
 }
 
 async function addLike(){
+    //alert('like clicked')
     const pName = this.parentNode.childNodes[1].innerText
     const pAddress = this.parentNode.childNodes[3].innerText
     const tLikes = Number(this.parentNode.childNodes[5].innerText)
+    //alert(tLikes)
     try{
         const response = await fetch('addOneLike', {
-            methode: 'put',
+            method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 'parkNameS': pName,
@@ -46,7 +50,7 @@ async function addLike(){
         const data = await response.json()
         console.log(data)
         location.reload()
-        }catch(err){
+    }catch(err){
         console.error(err)
     }
 }
