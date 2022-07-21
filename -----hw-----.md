@@ -230,3 +230,40 @@ Create: Heroku, Mongo Atlas, and Postman Accounts
 Read: Node.js and Express (Fullstack Open - https://fullstackopen.com/en/part3/node_js_and_express)
 Read: https://zellwk.com/blog/crud-express-mongodb
 Do: Make Your Own APP and Push To Heroku
+
+
+WE ARE BACK! LETTTTSSS GOOOOOO!!!! Come ease back into #100Devs class time and learn about the next few weeks!
+
+Super excited to be back together tonight! See you soon!
+
+
+  Please check-in by liking and retweeting this tweet before class: https://twitter.com/leonnoel/status/1550231707135053824
+
+
+  Class-42 of #100Devs starts in 60 minutes (6:30pm ET) live on Twitch: https://leonnoel.com/twitch
+
+
+ If you have questions, ask them here: slido.com with #3477905
+
+
+Here are the slides if you would like to follow along live: https://slides.com/d/7D5wxOY/live
+
+And here is the regular deck: https://slides.com/leonnoel/100devs-fresh
+
+
+ LAST CLASS - Build A Simple CRUD App With Express, MongoDB, & EJS! (class 41): https://youtu.be/LHf_STV_rLE
+
+ Our JavaScript Super Review can be found here: https://youtu.be/1sRJYuaqoiI
+
+Here is the link to the checklist: https://docs.google.com/document/d/1L2vTX3qvLhoGHeG5cVD2ljCfRGr1uJ_Gf-hNZj9KzTg
+
+Here is the link to THE BANK: https://docs.google.com/document/d/1p7DhCsLOMMybYfePWLlD1-_8KU20zkBoArH4pnW1o3c
+
+
+ ️HOMEWORK DUE (Tuesday 07/26):
+Do: Start prepping THE BANK
+Do: Complete Your Professional Links
+Create: Heroku, Mongo Atlas, and Postman Accounts
+Read: Node.js and Express (Fullstack Open) - https://fullstackopen.com/en/part3/node_js_and_express
+Read: https://zellwk.com/blog/crud-express-mongodb
+Do:  Your Own CRUD APP & Push To Heroku (assigned before break)
